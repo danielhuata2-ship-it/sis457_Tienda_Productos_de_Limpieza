@@ -144,3 +144,11 @@ Una Marca puede tener muchos Productos (1–N)
 
 9.Categoría
 Propósito: clasificar los productos según su tipo (ej. detergentes, jabones, desinfectantes).
+
+id
+
+nombre
+
+Relaciones:
+Una categoría tiene muchos productos (1-N)
+Un producto tiene una categoría (N-1)
