@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CadProLimp/CadProLimp.csproj" Id="3b323e3a-6381-4b07-bd2e-445f9ca98915" />
+  <Project Path="ClnProLimp/ClnProLimp.csproj" Id="07a847fe-8cd5-4aa4-bcad-091a63d69639" />
+  <Project Path="CpProLimp/CpProLimp.csproj" Id="85b03387-9083-4309-af4e-d7a5bec21802" />
+</Solution>
