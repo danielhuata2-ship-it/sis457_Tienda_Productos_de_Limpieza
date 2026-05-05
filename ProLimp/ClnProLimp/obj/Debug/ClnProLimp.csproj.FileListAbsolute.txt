@@ -1,0 +1,6 @@
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\ClnProLimp.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\ClnProLimp.pdb
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.AssemblyReference.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.CoreCompileInputs.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.pdb

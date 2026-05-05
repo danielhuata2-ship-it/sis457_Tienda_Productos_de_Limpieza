@@ -1,9 +1,0 @@
-.vs/
-bin/
-obj/
-packages/
-node_modules/
-*.user
-*.suo
-*.log
-.env

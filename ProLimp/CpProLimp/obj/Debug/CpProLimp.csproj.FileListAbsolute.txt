@@ -7,3 +7,12 @@ C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.csproj.CoreCompileInputs.cache
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.exe
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.pdb
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\CpProLimp.exe.config
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\CpProLimp.exe
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\CpProLimp.pdb
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.csproj.AssemblyReference.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.Properties.Resources.resources
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.csproj.GenerateResource.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.csproj.CoreCompileInputs.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.exe
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.pdb

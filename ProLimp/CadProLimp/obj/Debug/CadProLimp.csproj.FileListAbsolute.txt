@@ -1,0 +1,12 @@
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.dll.config
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.pdb
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.xml
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.AssemblyReference.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.CoreCompileInputs.cache
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.Up2Date
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.dll
+C:\Users\erika\OneDrive\Desktop\Nueva carpeta\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.pdb
