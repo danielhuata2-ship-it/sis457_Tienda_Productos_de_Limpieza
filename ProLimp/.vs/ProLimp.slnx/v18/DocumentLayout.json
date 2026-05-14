@@ -1,21 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\",
+  "WorkspaceRootPath": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\nueva carpeta\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\ventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\ventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\proveedorcln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\proveedorcln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\nueva carpeta\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\unidadmedidacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\unidadmedidacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\marcacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\marcacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\nueva carpeta\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\categoriacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\empleadocln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\empleadocln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\detalleventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\detalleventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\clnprolimp\\categoriacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\categoriacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B323E3A-6381-4B07-BD2E-445F9CA98915}|CadProLimp\\CadProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\nueva carpeta\\sis457_tienda_productos_de_limpieza\\prolimp\\cadprolimp\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\clnprolimp\\ventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\ventacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\clnprolimp\\unidadmedidacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07A847FE-8CD5-4AA4-BCAD-091A63D69639}|ClnProLimp\\ClnProLimp.csproj|solutionrelative:clnprolimp\\unidadmedidacln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B323E3A-6381-4B07-BD2E-445F9CA98915}|CadProLimp\\CadProLimp.csproj|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\cadprolimp\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{3B323E3A-6381-4B07-BD2E-445F9CA98915}|CadProLimp\\CadProLimp.csproj|solutionrelative:cadprolimp\\modelo.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -31,36 +55,112 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProveedorCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\ProveedorCln.cs",
+              "RelativeDocumentMoniker": "ClnProLimp\\ProveedorCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\ProveedorCln.cs",
+              "RelativeToolTip": "ClnProLimp\\ProveedorCln.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T00:20:29.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MarcaCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\MarcaCln.cs",
+              "RelativeDocumentMoniker": "ClnProLimp\\MarcaCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\MarcaCln.cs",
+              "RelativeToolTip": "ClnProLimp\\MarcaCln.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T00:19:12.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadoCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\EmpleadoCln.cs",
+              "RelativeDocumentMoniker": "ClnProLimp\\EmpleadoCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\EmpleadoCln.cs",
+              "RelativeToolTip": "ClnProLimp\\EmpleadoCln.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T00:18:29.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetalleVentaCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\DetalleVentaCln.cs",
+              "RelativeDocumentMoniker": "ClnProLimp\\DetalleVentaCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\DetalleVentaCln.cs",
+              "RelativeToolTip": "ClnProLimp\\DetalleVentaCln.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T00:16:37.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\Form1.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\Form1.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpProLimp\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T23:55:13.619Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\Form1.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\Form1.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\Form1.cs",
+              "RelativeToolTip": "CpProLimp\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAEwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T23:55:09.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VentaCln.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\VentaCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\VentaCln.cs",
               "RelativeDocumentMoniker": "ClnProLimp\\VentaCln.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\VentaCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\VentaCln.cs",
               "RelativeToolTip": "ClnProLimp\\VentaCln.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwDwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T02:38:32.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "UnidadMedidaCln.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\UnidadMedidaCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\UnidadMedidaCln.cs",
               "RelativeDocumentMoniker": "ClnProLimp\\UnidadMedidaCln.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\UnidadMedidaCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\UnidadMedidaCln.cs",
               "RelativeToolTip": "ClnProLimp\\UnidadMedidaCln.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-05T02:37:58.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-05T02:37:58.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CategoriaCln.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\CategoriaCln.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\CategoriaCln.cs",
               "RelativeDocumentMoniker": "ClnProLimp\\CategoriaCln.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\CategoriaCln.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\ClnProLimp\\CategoriaCln.cs",
               "RelativeToolTip": "ClnProLimp\\CategoriaCln.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -69,15 +169,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Modelo.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CadProLimp\\Modelo.edmx",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CadProLimp\\Modelo.edmx",
               "RelativeDocumentMoniker": "CadProLimp\\Modelo.edmx",
               "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CadProLimp\\Modelo.edmx [Diagram1]",
-              "RelativeToolTip": "CadProLimp\\Modelo.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\erika\\OneDrive\\Desktop\\Nueva carpeta\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CadProLimp\\Modelo.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2026-04-27T01:57:16.881Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2026-04-27T01:57:16.881Z"
             }
           ]
         }
