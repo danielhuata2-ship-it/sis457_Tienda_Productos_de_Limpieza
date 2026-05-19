@@ -36,4 +36,5 @@ C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\P
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.csproj.Up2Date
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.exe
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.pdb
-C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmProducto.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmProductos.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmProveedores.resources

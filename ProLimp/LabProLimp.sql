@@ -52,7 +52,7 @@ CREATE TABLE Proveedor(
 	nombreEmpresa VARCHAR (50) NOT NULL,
 	telefono BIGINT NOT NULL,
 	direccion VARCHAR (250) NULL,
-	email VARCHAR (30) NOT NULL
+	email VARCHAR (100) NOT NULL
 );
 
  CREATE TABLE Empleado(
@@ -62,7 +62,7 @@ CREATE TABLE Proveedor(
 	segundoApellido VARCHAR (30) NULL,
 	cedulaIdentidad VARCHAR (10) NOT NULL,
 	usuario VARCHAR(50) NOT NULL UNIQUE,
-	clave VARCHAR (100) NOT NULL,
+	clave VARCHAR (200) NOT NULL,
 	telefono BIGINT NOT NULL
  );
 

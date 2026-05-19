@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CpProLimp
 {
-    public partial class FrmProducto : Form
+    public partial class FrmProductos : Form
     {
-        public FrmProducto()
+        public FrmProductos()
         {
             InitializeComponent();
         }
