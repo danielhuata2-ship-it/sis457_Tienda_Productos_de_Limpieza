@@ -324,3 +324,37 @@ END;
 GO
 
 EXEC paDetalleVentaListar '';
+
+INSERT INTO Marca(nombre)
+VALUES ('Ola'), ('Omo'), ('Surf'), ('Skip'), ('Liz'), ('Dove'), ('Rexona'), ('Axe'), ('Sedal'), ('Pedsodent'), ('Colgate'), ('Adayo'), ('Muvel')
+
+SELECT * FROM Marca;
+
+INSERT INTO Categoria(nombre)
+VALUES
+('Limpieza de baño'),
+('Limpieza capilar'),
+('Limpieza dental'),
+('Papel higiénico y servilletas'),
+('Limpieza de cocina'),
+('Detergentes y lavado de ropa'),
+('Jabón de manos y cuerpo'),
+('Desodorantes y cuidado personal'),
+('Desinfectantes y antibacteriales'),
+('Productos para pisos'),
+('Aromatizantes y ambientadores')
+
+SELECT * FROM Categoria;
+
+INSERT INTO Proveedor(nombreEmpresa,telefono,direccion,email)
+VALUES ('Distribuidora Limpieza Total SRL', '76451234', 'Av. Blanco Galindo', 'contacto@limpiezatotal.com')
+
+SELECT * FROM Proveedor;
+
+INSERT INTO UnidadMedida(descripcion)
+VALUES ('Litro'),('Kilo'),('Gramo'),('Mililitro'),('Paquete'),('Caja')
+
+SELECT * FROM UnidadMedida
+
+INSERT INTO Producto(idunidadMedida,idproveedor,idmarca,idcategoria,codigo,nombre,precioUnitario,stock,fechaVencimiento,precioCompra,cantidadMinimaStock)
+VALUES ('6','1','1','1','PROD001','Limpia Baños','25.50','100','2026-05-10','15.00','10')
