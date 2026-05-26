@@ -1,4 +1,5 @@
 ﻿using ClnProLimp;
+using CadProLimp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,11 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using cpProLimp;
 
 namespace CpProLimp
 {
     public partial class FrmProductos : Form
     {
+        private bool esNuevo = false;
+
         public FrmProductos()
         {
             InitializeComponent();
@@ -46,14 +50,279 @@ namespace CpProLimp
             if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["codigo"];
         }
 
+        private void cargarUnidadMedida()
+        {
+            var lista = UnidadMedidaCln.listar();
+            cbxUnidadMedida.DataSource = lista;
+            cbxUnidadMedida.ValueMember = "id";
+            cbxUnidadMedida.DisplayMember = "descripcion";
+            cbxUnidadMedida.SelectedIndex = -1;
+        }
+
+
+
+        private void cargarProveedor()
+        {
+            var lista = ProveedorCln.listar();
+            cbxProveedor.DataSource = lista;
+            cbxProveedor.ValueMember = "id";
+            cbxProveedor.DisplayMember = "nombreEmpresa";
+            cbxProveedor.SelectedIndex = -1;
+        }
+
+        private void cargarCategoria()
+        {
+            var lista = CategoriaCln.listar();
+            cbxCategoria.DataSource = lista;
+            cbxCategoria.ValueMember = "id";
+            cbxCategoria.DisplayMember = "nombre";
+            cbxCategoria.SelectedIndex = -1;
+        }
+
+        private void cargarMarca()
+        {
+            var lista = MarcaCln.listar();
+            cbxMarca.DataSource = lista;
+            cbxMarca.ValueMember = "id";
+            cbxMarca.DisplayMember = "nombre";
+            cbxMarca.SelectedIndex = -1;
+        }
+
+
         private void FrmProducto_Load(object sender, EventArgs e)
         {
+            Size = new Size(1112, 546);
             listar();
+            cargarUnidadMedida();
+            cargarProveedor();
+            cargarCategoria();
+            cargarMarca();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             listar();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            esNuevo = true;
+            pnlAcciones.Enabled = false;
+            Size = new Size(1112, 811);
+            txtCodigo.Focus();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            esNuevo = false;
+            pnlAcciones.Enabled = false;
+            Size = new Size(1143, 838);
+
+            int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
+            var producto = ProductoCln.obtenerUno(id);
+
+            txtCodigo.Text = producto.codigo;
+            txtNombreProducto.Text = producto.nombre;
+            cbxUnidadMedida.SelectedValue = producto.idunidadMedida;
+            cbxMarca.SelectedValue = producto.idmarca;
+            cbxCategoria.SelectedValue = producto.idcategoria;
+            nudStock.Value = producto.stock;
+            nudPrecioUnitario.Value = producto.precioUnitario;
+            nudPrecioCompra.Value = producto.precioCompra;
+            if (producto.fechaVencimiento == null)
+            {
+                chkSinVencimiento.Checked = true;
+                dtpFechaVencimiento.Value = DateTime.Now;
+            }
+            else
+            {
+                chkSinVencimiento.Checked = false;
+                dtpFechaVencimiento.Value = producto.fechaVencimiento.Value;
+            }
+            cbxProveedor.SelectedValue = producto.idproveedor;
+            nudCantidadMinimaStock.Value = producto.cantidadMinimaStock;
+        }
+
+        private void limpiar()
+        {
+            txtCodigo.Clear();
+            txtNombreProducto.Clear();
+            cbxUnidadMedida.SelectedIndex = -1;
+            cbxProveedor.SelectedIndex = -1;
+            cbxCategoria.SelectedIndex = -1;
+            cbxMarca.SelectedIndex = -1;
+            nudStock.Value = 0;
+            nudPrecioUnitario.Value = 0;
+            nudPrecioCompra.Value = 0;
+            nudCantidadMinimaStock.Value = 5;
+            dtpFechaVencimiento.Value = DateTime.Now;
+            chkSinVencimiento.Checked = false;
+        }
+
+        private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) listar();
+        }
+
+        private bool validar()
+        {
+            bool esValido = true;
+
+            erpCodigo.Clear();
+            erpDescripcion.Clear();
+            erpUnidadMedida.Clear();
+            erpCategoria.Clear();
+            erpMarca.Clear();
+            erpStock.Clear();
+            erpPrecioUnitario.Clear();
+            erpProveedor.Clear();
+            erpPrecioCompra.Clear();
+            erpCantidadMinimaStock.Clear();
+
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
+            {
+                erpCodigo.SetError(txtCodigo, "El código es obligatorio");
+                esValido = false;
+            }
+            if (string.IsNullOrWhiteSpace(txtNombreProducto.Text))
+            {
+                erpDescripcion.SetError(txtNombreProducto, "El nombre del producto es obligatorio");
+                esValido = false;
+            }
+            if (cbxUnidadMedida.SelectedIndex == -1)
+            {
+                erpUnidadMedida.SetError(cbxUnidadMedida, "Seleccione una unidad de medida");
+                esValido = false;
+            }
+            if (cbxCategoria.SelectedIndex == -1)
+            {
+                erpCategoria.SetError(cbxCategoria, "Seleccione una categoría");
+                esValido = false;
+            }
+            if (cbxMarca.SelectedIndex == -1)
+            {
+                erpMarca.SetError(cbxMarca, "Seleccione una marca");
+                esValido = false;
+            }
+            if (nudStock.Value < 0)
+            {
+                erpStock.SetError(nudStock, "El stock no puede ser negativo");
+                esValido = false;
+            }
+            if (nudPrecioCompra.Value <= 0)
+            {
+                erpPrecioCompra.SetError(nudPrecioCompra, "El precio de compra debe ser mayor a cero");
+                esValido = false;
+            }
+            if (nudPrecioUnitario.Value <= nudPrecioCompra.Value)
+            {
+                erpPrecioUnitario.SetError(nudPrecioUnitario,
+                    "El precio de venta debe ser mayor al precio de compra");
+                esValido = false;
+            }
+            if (cbxProveedor.SelectedIndex == -1)
+            {
+                erpProveedor.SetError(cbxProveedor, "Seleccione un proveedor");
+                esValido = false;
+            }
+            if (nudCantidadMinimaStock.Value <= 0)
+            {
+                erpCantidadMinimaStock.SetError(nudCantidadMinimaStock,
+                    "La cantidad mínima debe ser mayor a cero");
+                esValido = false;
+            }
+
+            if (esValido)
+            {
+                int? idActual = esNuevo ? (int?)null : (int)dgvLista.CurrentRow.Cells["id"].Value;
+                var cod = txtCodigo.Text.Trim();
+                if (!string.IsNullOrWhiteSpace(cod) && ProductoCln.ExisteCodigo(cod, idActual))
+                {
+                    erpCodigo.SetError(txtCodigo, "El código ya está registrado.");
+                    esValido = false;
+                }
+            }
+
+            return esValido;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (validar())
+            {
+                var producto = new Producto();
+                producto.codigo = txtCodigo.Text.Trim();
+                producto.nombre = txtNombreProducto.Text.Trim();
+                producto.idunidadMedida = (int)cbxUnidadMedida.SelectedValue;
+                producto.idmarca = (int)cbxMarca.SelectedValue;
+                producto.idcategoria = (int)cbxCategoria.SelectedValue;
+                producto.stock = (int)nudStock.Value;
+                producto.precioUnitario = nudPrecioUnitario.Value;
+                producto.precioCompra = nudPrecioCompra.Value;
+                if (chkSinVencimiento.Checked)
+                    producto.fechaVencimiento = null;
+                else
+                    producto.fechaVencimiento = dtpFechaVencimiento.Value;
+                producto.idproveedor = (int)cbxProveedor.SelectedValue;
+                producto.cantidadMinimaStock = (int)nudCantidadMinimaStock.Value;
+                producto.usuarioRegistro = "admin";
+                if (esNuevo)
+                {
+                    producto.fechaRegistro = DateTime.Now;
+                    producto.estado = 1;
+                    ProductoCln.insertar(producto);
+
+                    MessageBox.Show("Producto agregado correctamente",
+                        "::: Mensaje - ProLimp :::",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    producto.id = (int)dgvLista.CurrentRow.Cells["id"].Value;
+                    ProductoCln.actualizar(producto);
+
+                    MessageBox.Show("Producto actualizado correctamente",
+                        "::: Mensaje - ProLimp :::",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                listar();
+                btnCancelar.PerformClick();
+                MessageBox.Show("Producto guardado correctamente", "::: Mensaje - ProLimp :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
+            string nombre = dgvLista.CurrentRow.Cells["nombre"].Value.ToString();
+            DialogResult dialog = MessageBox.Show($"¿Está seguro de eliminar el producto {nombre}?",
+                "::: Mensaje - ProLimp :::", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                ProductoCln.eliminar(id, "admin");
+                listar();
+                MessageBox.Show("Producto dado de baja correctamente", "::: Mensaje - ProLimp :::",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Size = new Size(1112, 546);
+            pnlAcciones.Enabled = true;
+            limpiar();
+        }
+
+        private void chkSinVencimiento_CheckedChanged(object sender, EventArgs e)
+        {
+            dtpFechaVencimiento.Enabled = !chkSinVencimiento.Checked;
         }
     }
 }
