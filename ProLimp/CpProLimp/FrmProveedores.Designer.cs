@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProveedores));
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -36,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gbxLista = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlAcciones = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -52,11 +53,19 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblNombreEmpresa = new System.Windows.Forms.Label();
+            this.erpNombreEmpresa = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpTelefono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpDireccion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpEmail = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlAcciones.SuspendLayout();
             this.gbxDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombreEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDireccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -101,6 +110,7 @@
             this.txtParametro.Name = "txtParametro";
             this.txtParametro.Size = new System.Drawing.Size(404, 26);
             this.txtParametro.TabIndex = 10;
+            this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // label1
             // 
@@ -139,16 +149,16 @@
             this.dgvLista.Size = new System.Drawing.Size(1034, 209);
             this.dgvLista.TabIndex = 0;
             // 
-            // panel1
+            // pnlAcciones
             // 
-            this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Controls.Add(this.btnBorrar);
-            this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Location = new System.Drawing.Point(6, 396);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1048, 56);
-            this.panel1.TabIndex = 12;
+            this.pnlAcciones.Controls.Add(this.btnCerrar);
+            this.pnlAcciones.Controls.Add(this.btnBorrar);
+            this.pnlAcciones.Controls.Add(this.btnEditar);
+            this.pnlAcciones.Controls.Add(this.btnNuevo);
+            this.pnlAcciones.Location = new System.Drawing.Point(6, 396);
+            this.pnlAcciones.Name = "pnlAcciones";
+            this.pnlAcciones.Size = new System.Drawing.Size(1048, 56);
+            this.pnlAcciones.TabIndex = 12;
             // 
             // btnCerrar
             // 
@@ -162,6 +172,7 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnBorrar
             // 
@@ -175,6 +186,7 @@
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnEditar
             // 
@@ -188,6 +200,7 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -201,6 +214,7 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // gbxDatos
             // 
@@ -253,6 +267,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCanelar
             // 
@@ -267,6 +282,7 @@
             this.btnCanelar.Text = "Cancelar";
             this.btnCanelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCanelar.UseVisualStyleBackColor = true;
+            this.btnCanelar.Click += new System.EventHandler(this.btnCanelar_Click);
             // 
             // txtTelefono
             // 
@@ -320,14 +336,30 @@
             this.lblNombreEmpresa.TabIndex = 0;
             this.lblNombreEmpresa.Text = "Nombre de Empresa: ";
             // 
+            // erpNombreEmpresa
+            // 
+            this.erpNombreEmpresa.ContainerControl = this;
+            // 
+            // erpTelefono
+            // 
+            this.erpTelefono.ContainerControl = this;
+            // 
+            // erpDireccion
+            // 
+            this.erpDireccion.ContainerControl = this;
+            // 
+            // erpEmail
+            // 
+            this.erpEmail.ContainerControl = this;
+            // 
             // FrmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1066, 624);
+            this.ClientSize = new System.Drawing.Size(1066, 617);
             this.Controls.Add(this.gbxDatos);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.txtParametro);
             this.Controls.Add(this.label1);
@@ -337,7 +369,7 @@
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmProveedores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -346,9 +378,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxLista.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.pnlAcciones.ResumeLayout(false);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNombreEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpTelefono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDireccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,7 +399,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbxLista;
         private System.Windows.Forms.DataGridView dgvLista;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlAcciones;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnEditar;
@@ -379,5 +415,9 @@
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblNombreEmpresa;
+        private System.Windows.Forms.ErrorProvider erpNombreEmpresa;
+        private System.Windows.Forms.ErrorProvider erpTelefono;
+        private System.Windows.Forms.ErrorProvider erpDireccion;
+        private System.Windows.Forms.ErrorProvider erpEmail;
     }
 }
