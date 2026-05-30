@@ -67,3 +67,20 @@ C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReVentas.resources
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmVentas.resources
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.exe.licenses
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.4.5.2.dll
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.C1Ribbon.4.5.2.dll
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.4.5.2.xml
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.C1Ribbon.4.5.2.xml
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmAutenticacion.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmClientes.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmPrincipal.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReClientes.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReEmpleados.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReProductos.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReProveedores.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmReVentas.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmVentas.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.exe.licenses
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmFactura.resources

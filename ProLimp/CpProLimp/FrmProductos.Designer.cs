@@ -141,7 +141,7 @@
             this.txtParametro.Location = new System.Drawing.Point(568, 97);
             this.txtParametro.MaxLength = 50;
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(404, 26);
+            this.txtParametro.Size = new System.Drawing.Size(404, 30);
             this.txtParametro.TabIndex = 4;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
@@ -264,7 +264,7 @@
             this.cbxMarca.FormattingEnabled = true;
             this.cbxMarca.Location = new System.Drawing.Point(285, 97);
             this.cbxMarca.Name = "cbxMarca";
-            this.cbxMarca.Size = new System.Drawing.Size(183, 32);
+            this.cbxMarca.Size = new System.Drawing.Size(183, 37);
             this.cbxMarca.TabIndex = 24;
             // 
             // lblMarca
@@ -272,7 +272,7 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Location = new System.Drawing.Point(42, 100);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(73, 24);
+            this.lblMarca.Size = new System.Drawing.Size(91, 29);
             this.lblMarca.TabIndex = 23;
             this.lblMarca.Text = "Marca:";
             // 
@@ -282,7 +282,7 @@
             this.cbxCategoria.FormattingEnabled = true;
             this.cbxCategoria.Location = new System.Drawing.Point(285, 135);
             this.cbxCategoria.Name = "cbxCategoria";
-            this.cbxCategoria.Size = new System.Drawing.Size(183, 32);
+            this.cbxCategoria.Size = new System.Drawing.Size(183, 37);
             this.cbxCategoria.TabIndex = 22;
             // 
             // lblCategoria
@@ -290,7 +290,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Location = new System.Drawing.Point(42, 138);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(105, 24);
+            this.lblCategoria.Size = new System.Drawing.Size(134, 29);
             this.lblCategoria.TabIndex = 21;
             this.lblCategoria.Text = "Categoría:";
             // 
@@ -300,7 +300,7 @@
             this.chkSinVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkSinVencimiento.Location = new System.Drawing.Point(771, 89);
             this.chkSinVencimiento.Name = "chkSinVencimiento";
-            this.chkSinVencimiento.Size = new System.Drawing.Size(229, 24);
+            this.chkSinVencimiento.Size = new System.Drawing.Size(276, 29);
             this.chkSinVencimiento.TabIndex = 20;
             this.chkSinVencimiento.Text = "Sin fecha de vencimiento";
             this.chkSinVencimiento.UseVisualStyleBackColor = true;
@@ -330,7 +330,7 @@
             0,
             0});
             this.nudCantidadMinimaStock.Name = "nudCantidadMinimaStock";
-            this.nudCantidadMinimaStock.Size = new System.Drawing.Size(183, 29);
+            this.nudCantidadMinimaStock.Size = new System.Drawing.Size(183, 34);
             this.nudCantidadMinimaStock.TabIndex = 18;
             // 
             // btnGuardar
@@ -357,7 +357,7 @@
             0,
             0});
             this.nudPrecioCompra.Name = "nudPrecioCompra";
-            this.nudPrecioCompra.Size = new System.Drawing.Size(183, 29);
+            this.nudPrecioCompra.Size = new System.Drawing.Size(183, 34);
             this.nudPrecioCompra.TabIndex = 14;
             // 
             // cbxProveedor
@@ -366,7 +366,7 @@
             this.cbxProveedor.FormattingEnabled = true;
             this.cbxProveedor.Location = new System.Drawing.Point(771, 114);
             this.cbxProveedor.Name = "cbxProveedor";
-            this.cbxProveedor.Size = new System.Drawing.Size(183, 32);
+            this.cbxProveedor.Size = new System.Drawing.Size(183, 37);
             this.cbxProveedor.TabIndex = 13;
             // 
             // dtpFechaVencimiento
@@ -376,7 +376,7 @@
             this.dtpFechaVencimiento.Location = new System.Drawing.Point(771, 57);
             this.dtpFechaVencimiento.Name = "dtpFechaVencimiento";
             this.dtpFechaVencimiento.ShowCheckBox = true;
-            this.dtpFechaVencimiento.Size = new System.Drawing.Size(183, 29);
+            this.dtpFechaVencimiento.Size = new System.Drawing.Size(183, 34);
             this.dtpFechaVencimiento.TabIndex = 12;
             // 
             // lblCantidadMinimaStock
@@ -385,7 +385,7 @@
             this.lblCantidadMinimaStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadMinimaStock.Location = new System.Drawing.Point(499, 188);
             this.lblCantidadMinimaStock.Name = "lblCantidadMinimaStock";
-            this.lblCantidadMinimaStock.Size = new System.Drawing.Size(261, 25);
+            this.lblCantidadMinimaStock.Size = new System.Drawing.Size(322, 31);
             this.lblCantidadMinimaStock.TabIndex = 17;
             this.lblCantidadMinimaStock.Text = "Cantidad Mínima Stock:";
             // 
@@ -398,7 +398,7 @@
             0,
             0});
             this.nudPrecioUnitario.Name = "nudPrecioUnitario";
-            this.nudPrecioUnitario.Size = new System.Drawing.Size(183, 29);
+            this.nudPrecioUnitario.Size = new System.Drawing.Size(183, 34);
             this.nudPrecioUnitario.TabIndex = 11;
             // 
             // lblPrecioCompra
@@ -407,7 +407,7 @@
             this.lblPrecioCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecioCompra.Location = new System.Drawing.Point(500, 153);
             this.lblPrecioCompra.Name = "lblPrecioCompra";
-            this.lblPrecioCompra.Size = new System.Drawing.Size(207, 25);
+            this.lblPrecioCompra.Size = new System.Drawing.Size(256, 31);
             this.lblPrecioCompra.TabIndex = 16;
             this.lblPrecioCompra.Text = "Precio de Compra:";
             // 
@@ -420,7 +420,7 @@
             0,
             0});
             this.nudStock.Name = "nudStock";
-            this.nudStock.Size = new System.Drawing.Size(183, 29);
+            this.nudStock.Size = new System.Drawing.Size(183, 34);
             this.nudStock.TabIndex = 10;
             // 
             // cbxUnidadMedida
@@ -429,7 +429,7 @@
             this.cbxUnidadMedida.FormattingEnabled = true;
             this.cbxUnidadMedida.Location = new System.Drawing.Point(285, 173);
             this.cbxUnidadMedida.Name = "cbxUnidadMedida";
-            this.cbxUnidadMedida.Size = new System.Drawing.Size(183, 32);
+            this.cbxUnidadMedida.Size = new System.Drawing.Size(183, 37);
             this.cbxUnidadMedida.TabIndex = 9;
             // 
             // txtNombreProducto
@@ -437,7 +437,7 @@
             this.txtNombreProducto.Location = new System.Drawing.Point(285, 62);
             this.txtNombreProducto.MaxLength = 100;
             this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(183, 29);
+            this.txtNombreProducto.Size = new System.Drawing.Size(183, 34);
             this.txtNombreProducto.TabIndex = 8;
             // 
             // txtCodigo
@@ -445,7 +445,7 @@
             this.txtCodigo.Location = new System.Drawing.Point(285, 27);
             this.txtCodigo.MaxLength = 20;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(183, 29);
+            this.txtCodigo.Size = new System.Drawing.Size(183, 34);
             this.txtCodigo.TabIndex = 7;
             // 
             // lblProveedor
@@ -453,7 +453,7 @@
             this.lblProveedor.AutoSize = true;
             this.lblProveedor.Location = new System.Drawing.Point(501, 117);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(113, 24);
+            this.lblProveedor.Size = new System.Drawing.Size(142, 29);
             this.lblProveedor.TabIndex = 6;
             this.lblProveedor.Text = "Proveedor:";
             // 
@@ -462,7 +462,7 @@
             this.lblFechaVencimiento.AutoSize = true;
             this.lblFechaVencimiento.Location = new System.Drawing.Point(500, 61);
             this.lblFechaVencimiento.Name = "lblFechaVencimiento";
-            this.lblFechaVencimiento.Size = new System.Drawing.Size(228, 24);
+            this.lblFechaVencimiento.Size = new System.Drawing.Size(280, 29);
             this.lblFechaVencimiento.TabIndex = 5;
             this.lblFechaVencimiento.Text = "Fecha de Vencimiento:";
             // 
@@ -471,7 +471,7 @@
             this.lblPrecioUnitario.AutoSize = true;
             this.lblPrecioUnitario.Location = new System.Drawing.Point(501, 24);
             this.lblPrecioUnitario.Name = "lblPrecioUnitario";
-            this.lblPrecioUnitario.Size = new System.Drawing.Size(147, 24);
+            this.lblPrecioUnitario.Size = new System.Drawing.Size(187, 29);
             this.lblPrecioUnitario.TabIndex = 4;
             this.lblPrecioUnitario.Text = "Precio Unitario";
             // 
@@ -480,7 +480,7 @@
             this.lblStock.AutoSize = true;
             this.lblStock.Location = new System.Drawing.Point(42, 213);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(67, 24);
+            this.lblStock.Size = new System.Drawing.Size(85, 29);
             this.lblStock.TabIndex = 3;
             this.lblStock.Text = "Stock:";
             // 
@@ -489,7 +489,7 @@
             this.lblUnidadMedida.AutoSize = true;
             this.lblUnidadMedida.Location = new System.Drawing.Point(42, 176);
             this.lblUnidadMedida.Name = "lblUnidadMedida";
-            this.lblUnidadMedida.Size = new System.Drawing.Size(187, 24);
+            this.lblUnidadMedida.Size = new System.Drawing.Size(234, 29);
             this.lblUnidadMedida.TabIndex = 2;
             this.lblUnidadMedida.Text = "Unidad de Medida:";
             // 
@@ -498,7 +498,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(42, 65);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(216, 24);
+            this.lblDescripcion.Size = new System.Drawing.Size(270, 29);
             this.lblDescripcion.TabIndex = 1;
             this.lblDescripcion.Text = "Nombre del Producto:";
             // 
@@ -508,7 +508,7 @@
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(41, 29);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(100, 25);
+            this.lblCodigo.Size = new System.Drawing.Size(123, 31);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código: ";
             // 
@@ -579,7 +579,7 @@
             // 
             // FrmProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1096, 772);

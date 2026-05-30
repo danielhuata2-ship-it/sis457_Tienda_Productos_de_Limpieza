@@ -67,7 +67,7 @@
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(948, 201);
+            this.c1Ribbon1.Size = new System.Drawing.Size(992, 201);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab2);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab3);
@@ -212,12 +212,13 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::CpProLimp.Properties.Resources.Diseño_sin_título;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 207);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 201);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(948, 280);
+            this.pictureBox1.Size = new System.Drawing.Size(992, 334);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // FrmPrincipal
@@ -225,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(948, 509);
+            this.ClientSize = new System.Drawing.Size(992, 535);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.c1Ribbon1);
             this.Font = new System.Drawing.Font("Arial Narrow", 14F);

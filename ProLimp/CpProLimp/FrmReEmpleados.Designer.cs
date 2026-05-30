@@ -48,7 +48,7 @@
             this.label1.Location = new System.Drawing.Point(21, 100);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 20);
+            this.label1.Size = new System.Drawing.Size(483, 25);
             this.label1.TabIndex = 31;
             this.label1.Text = "Buscar el empleado por los apellidos o el usuario";
             // 
@@ -57,22 +57,24 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(804, 86);
+            this.btnBuscar.Location = new System.Drawing.Point(790, 86);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(97, 47);
+            this.btnBuscar.Size = new System.Drawing.Size(111, 47);
             this.btnBuscar.TabIndex = 30;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(537, 97);
+            this.txtParametro.Location = new System.Drawing.Point(521, 97);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
             this.txtParametro.Size = new System.Drawing.Size(243, 32);
             this.txtParametro.TabIndex = 29;
+            this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // pictureBox1
             // 
@@ -126,7 +128,7 @@
             // 
             // FrmReEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(907, 544);
@@ -139,10 +141,11 @@
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmReEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Reporte Empleados - Pro-Limp :::";
+            this.Load += new System.EventHandler(this.FrmReEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();

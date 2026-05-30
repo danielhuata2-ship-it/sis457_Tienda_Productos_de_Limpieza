@@ -43,11 +43,11 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(631, 96);
+            this.txtParametro.Location = new System.Drawing.Point(556, 96);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(166, 32);
+            this.txtParametro.Size = new System.Drawing.Size(241, 32);
             this.txtParametro.TabIndex = 17;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
@@ -69,7 +69,7 @@
             this.label2.Location = new System.Drawing.Point(13, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(619, 24);
+            this.label2.Size = new System.Drawing.Size(500, 19);
             this.label2.TabIndex = 19;
             this.label2.Text = "Buscar el producto por Código, Descripción o Unidad de Medida";
             // 
@@ -128,7 +128,7 @@
             // 
             // FrmReProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(909, 557);
