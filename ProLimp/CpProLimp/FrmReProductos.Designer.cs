@@ -43,12 +43,13 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(554, 96);
+            this.txtParametro.Location = new System.Drawing.Point(631, 96);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(243, 32);
+            this.txtParametro.Size = new System.Drawing.Size(166, 32);
             this.txtParametro.TabIndex = 17;
+            this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
             // lblTitulo
             // 
@@ -68,7 +69,7 @@
             this.label2.Location = new System.Drawing.Point(13, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(500, 19);
+            this.label2.Size = new System.Drawing.Size(619, 24);
             this.label2.TabIndex = 19;
             this.label2.Text = "Buscar el producto por Código, Descripción o Unidad de Medida";
             // 
@@ -112,6 +113,7 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // pictureBox1
             // 
@@ -126,7 +128,7 @@
             // 
             // FrmReProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(909, 557);
@@ -144,6 +146,7 @@
             this.Name = "FrmReProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Reporte Producto - Pro-Limp :::";
+            this.Load += new System.EventHandler(this.FrmReProductos_Load);
             this.gbxListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

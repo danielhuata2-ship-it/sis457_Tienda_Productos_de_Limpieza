@@ -19,3 +19,18 @@ C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\P
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.Up2Date
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.dll
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.pdb
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\ClnProLimp.dll.config
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\ClnProLimp.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\ClnProLimp.pdb
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\CadProLimp.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\EntityFramework.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\CadProLimp.pdb
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\CadProLimp.dll.config
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\EntityFramework.xml
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.AssemblyReference.cache
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.CoreCompileInputs.cache
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.csproj.Up2Date
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\ClnProLimp\obj\Debug\ClnProLimp.pdb

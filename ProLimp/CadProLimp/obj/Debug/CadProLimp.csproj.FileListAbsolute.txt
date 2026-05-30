@@ -22,3 +22,15 @@ C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\P
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.Up2Date
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.dll
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.pdb
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.dll.config
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\CadProLimp.pdb
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.xml
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.AssemblyReference.cache
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.CoreCompileInputs.cache
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.csproj.Up2Date
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.dll
+C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CadProLimp\obj\Debug\CadProLimp.pdb

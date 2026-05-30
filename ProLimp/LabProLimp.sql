@@ -358,3 +358,11 @@ SELECT * FROM UnidadMedida
 
 INSERT INTO Producto(idunidadMedida,idproveedor,idmarca,idcategoria,codigo,nombre,precioUnitario,stock,fechaVencimiento,precioCompra,cantidadMinimaStock)
 VALUES ('6','1','1','1','PROD001','Limpia Baños','25.50','100','2026-05-10','15.00','10')
+
+DELETE FROM Empleado
+WHERE usuario = 'dhuata'
+
+INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usuario,clave,telefono)
+VALUES ('Daniel','Huata','Florse','13464570','dhuata','i0hcoO/nssY6WOs9pOp5Xw==','67625178')
+
+SELECT * FROM Empleado

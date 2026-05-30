@@ -106,7 +106,7 @@ namespace CpProLimp
                 var cliente = new Cliente();
                 cliente.razonSocial = txtRazonSocial.Text.Trim();
                 cliente.cedulaIdentidad = txtCedulaIdentidad.Text.Trim();
-                    cliente.usuarioRegistro = "admin";
+                cliente.usuarioRegistro = Util.empleado.usuario;
                 if (esNuevo)
                 {
                     cliente.fechaRegistro = DateTime.Now;
