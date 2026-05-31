@@ -365,6 +365,9 @@ WHERE usuario = 'dhuata'
 INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usuario,clave,telefono)
 VALUES ('Daniel','Huata','Florse','13464570','dhuata','i0hcoO/nssY6WOs9pOp5Xw==','67625178')
 
+INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usuario,clave,telefono)
+VALUES ('Erika','Mendoza','Daza','10390430','edaza','oUOsoOGI3rrEsSxCa0AXBW9n4JFJdDR6uJN1ggL4NkM=','67649000')
+
 SELECT * FROM Empleado
 
 INSERT INTO Cliente(razonSocial,cedulaIdentidad)

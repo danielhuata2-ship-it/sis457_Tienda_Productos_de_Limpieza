@@ -144,6 +144,7 @@
             this.Name = "FrmReVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Reporte Ventas - Pro_Limp :::";
+            this.Load += new System.EventHandler(this.FrmReVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbxListado.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
