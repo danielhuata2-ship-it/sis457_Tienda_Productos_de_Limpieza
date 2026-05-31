@@ -39,6 +39,8 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblDescuento = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +131,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpProLimp.Properties.Resources.cerrar;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(217, 580);
+            this.btnCerrar.Location = new System.Drawing.Point(220, 600);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -138,13 +140,14 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTotal.Location = new System.Drawing.Point(225, 552);
+            this.lblTotal.Location = new System.Drawing.Point(194, 563);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(83, 24);
@@ -158,18 +161,46 @@
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.Location = new System.Drawing.Point(4, 213);
             this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDetalle.MultiSelect = false;
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersWidth = 51;
-            this.dgvDetalle.Size = new System.Drawing.Size(542, 328);
+            this.dgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDetalle.Size = new System.Drawing.Size(542, 293);
             this.dgvDetalle.TabIndex = 29;
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.AutoSize = true;
+            this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSubtotal.Location = new System.Drawing.Point(185, 510);
+            this.lblSubtotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(91, 24);
+            this.lblSubtotal.TabIndex = 32;
+            this.lblSubtotal.Text = "Subtotal:";
+            // 
+            // lblDescuento
+            // 
+            this.lblDescuento.AutoSize = true;
+            this.lblDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescuento.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDescuento.Location = new System.Drawing.Point(176, 534);
+            this.lblDescuento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescuento.Name = "lblDescuento";
+            this.lblDescuento.Size = new System.Drawing.Size(116, 24);
+            this.lblDescuento.TabIndex = 33;
+            this.lblDescuento.Text = "Descuento:";
             // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(559, 623);
+            this.ClientSize = new System.Drawing.Size(559, 648);
+            this.Controls.Add(this.lblDescuento);
+            this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.dgvDetalle);
@@ -183,10 +214,11 @@
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Factura - Pro-Limp :::";
+            this.Load += new System.EventHandler(this.FrmFactura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.ResumeLayout(false);
@@ -206,5 +238,7 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridView dgvDetalle;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label lblDescuento;
     }
 }

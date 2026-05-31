@@ -1,4 +1,5 @@
-﻿using ClnProLimp;
+﻿using CadProLimp;
+using ClnProLimp;
 using cpProLimp;
 using System;
 using System.Collections.Generic;
@@ -315,6 +316,227 @@ namespace CpProLimp
                         break;
                     }
                 }
+            }
+        }
+
+        private void btnMenos_Click(object sender, EventArgs e)
+        {
+            if (dgvVenta.CurrentRow == null)
+                return;
+
+            int idProducto =
+                Convert.ToInt32(dgvVenta.CurrentRow.Cells["idProducto"].Value);
+
+            var item = detalle.FirstOrDefault(x => x.idProducto == idProducto);
+
+            if (item != null)
+            {
+                if (item.cantidad > 1)
+                {
+                    item.cantidad--;
+
+                    item.subtotal = item.cantidad * item.precioUnitario;
+
+                    refrescarDetalle();
+
+                    foreach (DataGridViewRow fila in dgvVenta.Rows)
+                    {
+                        if (Convert.ToInt32(fila.Cells["idProducto"].Value) == idProducto)
+                        {
+                            fila.Selected = true;
+                            dgvVenta.CurrentCell = fila.Cells["nombre"];
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    detalle.Remove(item);
+                    refrescarDetalle();
+                }
+            }
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            if (dgvVenta.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un producto del detalle.", "ProLimp",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            int idProducto =
+                Convert.ToInt32(dgvVenta.CurrentRow.Cells["idProducto"].Value);
+
+            var item = detalle.FirstOrDefault(x => x.idProducto == idProducto);
+
+            if (item != null)
+            {
+                detalle.Remove(item);
+                refrescarDetalle();
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            if (detalle.Count == 0)
+                return;
+
+            DialogResult r = MessageBox.Show("¿Desea vaciar toda la venta?", "ProLimp",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (r == DialogResult.Yes)
+            {
+                detalle.Clear();
+                refrescarDetalle();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+           DialogResult r = MessageBox.Show("¿Desea cancelar la venta?", "ProLimp",
+           MessageBoxButtons.YesNo,
+           MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes) Close();
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (detalle.Count == 0)
+            {
+                MessageBox.Show(
+                    "Debe agregar al menos un producto.",
+                    "::: Mensaje - ProLimp :::",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            int idCliente = obtenerIdClientePorCI(txtCiCliente.Text);
+
+            if (idCliente == -1)
+            {
+                MessageBox.Show(
+                    "Debe seleccionar un cliente válido.",
+                    "::: Mensaje - ProLimp :::",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            try
+            {
+                Venta venta = new Venta();
+
+                venta.idcliente = idCliente;
+                venta.idempleado = Util.empleado.id;
+                venta.fecha = DateTime.Now;
+
+                decimal subtotal = detalle.Sum(x => x.subtotal);
+
+                decimal descuento =
+                    subtotal * porcentajeDescuento / 100;
+
+                venta.total = subtotal - descuento;
+
+                venta.usuarioRegistro = Util.empleado.usuario;
+                venta.fechaRegistro = DateTime.Now;
+                venta.estado = 1;
+
+                int idVenta = VentaCln.insertar(venta);
+
+                foreach (var item in detalle)
+                {
+                    DetalleVenta det = new DetalleVenta();
+
+                    det.idventa = idVenta;
+                    det.idproducto = item.idProducto;
+                    det.cantidad = item.cantidad;
+                    det.precioUnitario = item.precioUnitario;
+                    det.subtotal = item.subtotal;
+
+                    det.usuarioRegistro = Util.empleado.usuario;
+                    det.fechaRegistro = DateTime.Now;
+                    det.estado = 1;
+
+                    DetalleVentaCln.insertar(det);
+
+                    ProductoCln.actualizarStock(
+                        item.idProducto,
+                        item.cantidad);
+                }
+
+                string nombreClienteTemp = lblCliente.Text;
+                string ciClienteTemp = txtCiCliente.Text;
+
+                List<ItemVenta> detalleTemp =
+                    new List<ItemVenta>(detalle);
+
+                MessageBox.Show(
+                    $"Venta registrada correctamente.\n\n",
+                    "::: Venta Exitosa :::",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                FrmFactura factura = new FrmFactura(
+                    idVenta,
+                    nombreClienteTemp,
+                    ciClienteTemp,
+                    DateTime.Now,
+                    subtotal,
+                    descuento,
+                    venta.total,
+                    detalleTemp
+                );
+
+                factura.ShowDialog();
+
+                detalle.Clear();
+
+                refrescarDetalle();
+
+                txtCiCliente.Clear();
+
+                lblCliente.Text = "Cliente no seleccionado";
+                lblComprasCliente.Text = "Compras Realizadas: 0";
+                lblTipoCliente.Text = "Cliente estándar";
+
+                lblTotal.Text = "0.00";
+                lblSubtotal.Text = "0.00";
+                lblDescuentoMonto.Text = "0.00";
+                lblDescuento.Text = "0%";
+
+                porcentajeDescuento = 0;
+
+                listarProductos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "::: Error :::",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            listarProductos();
+        }
+
+        private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) 
+            { 
+                listarProductos();
+                e.Handled = true;
             }
         }
     }

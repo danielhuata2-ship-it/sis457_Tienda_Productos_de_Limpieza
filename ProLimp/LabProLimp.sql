@@ -366,3 +366,8 @@ INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usua
 VALUES ('Daniel','Huata','Florse','13464570','dhuata','i0hcoO/nssY6WOs9pOp5Xw==','67625178')
 
 SELECT * FROM Empleado
+
+INSERT INTO Cliente(razonSocial,cedulaIdentidad)
+VALUES ('Consumidor Final','0')
+
+SELECT * FROM Cliente

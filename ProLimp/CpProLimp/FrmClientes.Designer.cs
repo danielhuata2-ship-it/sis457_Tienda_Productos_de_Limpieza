@@ -79,7 +79,7 @@
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(949, 86);
             this.lblTitulo.TabIndex = 8;
-            this.lblTitulo.Text = "Proveedores - ProLimp";
+            this.lblTitulo.Text = "Clientes - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtParametro
@@ -315,7 +315,7 @@
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
