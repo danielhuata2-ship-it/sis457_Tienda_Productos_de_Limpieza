@@ -58,5 +58,26 @@ namespace ClnProLimp
                 return context.paVentaListar(parametro).ToList();
             }
         }
+
+        public static int contarVentasCliente(int idCliente)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                return context.Venta
+                    .Count(v => v.idcliente == idCliente && v.estado > -1);
+            }
+        }
+
+        public static int ContarComprasCliente(int idCliente)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                return context.Venta.Count(v =>
+                    v.idcliente == idCliente &&
+                    v.estado != -1);
+            }
+        }
+
+
     }
 }

@@ -1,53 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\erika\\OneDrive\\Desktop\\sis457 Lab\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\erika\\onedrive\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmVentas.cs",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\sis457 Lab\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmVentas.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\sis457 Lab\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs",
-              "RelativeToolTip": "CpProLimp\\FrmVentas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T21:08:41.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmVentas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\erika\\OneDrive\\Desktop\\sis457 Lab\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmVentas.cs",
-              "ToolTip": "C:\\Users\\erika\\OneDrive\\Desktop\\sis457 Lab\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpProLimp\\FrmVentas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T21:01:40.089Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
