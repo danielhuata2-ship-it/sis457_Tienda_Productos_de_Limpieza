@@ -84,16 +84,5 @@ namespace ClnProLimp
                     (!excluirId.HasValue || c.id != excluirId.Value));
             }
         }
-        public static bool ExisteRazonSocial(string razonSocial, int? excluirId = null)
-        {
-            if (string.IsNullOrWhiteSpace(razonSocial)) return false;
-            using (var context = new LabProLimpEntities())
-            {
-                return context.Cliente.Any(c =>
-                    c.estado > -1 &&
-                    c.razon_social == razonSocial &&
-                    (!excluirId.HasValue || c.id != excluirId.Value));
-            }
-        }
     }
 }

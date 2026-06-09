@@ -57,7 +57,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(803, 87);
+            this.btnBuscar.Location = new System.Drawing.Point(1100, 88);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 47);
             this.btnBuscar.TabIndex = 23;
@@ -68,11 +68,11 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(553, 98);
+            this.txtParametro.Location = new System.Drawing.Point(505, 98);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(243, 32);
+            this.txtParametro.Size = new System.Drawing.Size(588, 32);
             this.txtParametro.TabIndex = 22;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
@@ -93,7 +93,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(-3, -1);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(912, 86);
+            this.lblTitulo.Size = new System.Drawing.Size(1432, 86);
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Reportes de Proveedores - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,7 +106,7 @@
             this.gbxListado.Margin = new System.Windows.Forms.Padding(4);
             this.gbxListado.Name = "gbxListado";
             this.gbxListado.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxListado.Size = new System.Drawing.Size(892, 405);
+            this.gbxListado.Size = new System.Drawing.Size(1426, 405);
             this.gbxListado.TabIndex = 25;
             this.gbxListado.TabStop = false;
             this.gbxListado.Text = "Lista de Proveedores";
@@ -123,7 +123,7 @@
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 51;
-            this.dgvLista.Size = new System.Drawing.Size(876, 367);
+            this.dgvLista.Size = new System.Drawing.Size(1410, 367);
             this.dgvLista.TabIndex = 0;
             // 
             // label1
@@ -142,7 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 557);
+            this.ClientSize = new System.Drawing.Size(1442, 557);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbxListado);
             this.Controls.Add(this.label2);

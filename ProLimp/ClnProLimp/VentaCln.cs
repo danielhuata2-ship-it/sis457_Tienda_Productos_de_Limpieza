@@ -77,7 +77,5 @@ namespace ClnProLimp
                     v.estado != -1);
             }
         }
-
-
     }
 }

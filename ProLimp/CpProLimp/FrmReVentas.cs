@@ -46,7 +46,8 @@ namespace CpProLimp
             {
                 listaCompleta = listaCompleta.Where(x =>
                     x.Cliente.Contains(txtParametro.Text) ||
-                    x.Empleado.Contains(txtParametro.Text));
+                    x.Empleado.Contains(txtParametro.Text) ||
+                    x.fecha.ToString("dd/MM/yyyy").Contains(txtParametro.Text));
             }
 
             dgvLista.DataSource = listaCompleta.ToList();
@@ -73,6 +74,21 @@ namespace CpProLimp
         private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter) listar();
+        }
+
+        private void btnVerDetalle_Click(object sender, EventArgs e)
+        {
+            if (dgvLista.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione una venta");
+                return;
+            }
+
+            int idVenta = Convert.ToInt32(
+                dgvLista.CurrentRow.Cells["id"].Value);
+
+            FrmDetalleVenta frm = new FrmDetalleVenta(idVenta);
+            frm.ShowDialog();
         }
     }
 }

@@ -36,6 +36,7 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbxListado = new System.Windows.Forms.GroupBox();
             this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.btnVerDetalle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbxListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
@@ -126,12 +127,24 @@
             this.dgvLista.Size = new System.Drawing.Size(1017, 367);
             this.dgvLista.TabIndex = 0;
             // 
+            // btnVerDetalle
+            // 
+            this.btnVerDetalle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerDetalle.Location = new System.Drawing.Point(21, 543);
+            this.btnVerDetalle.Name = "btnVerDetalle";
+            this.btnVerDetalle.Size = new System.Drawing.Size(134, 47);
+            this.btnVerDetalle.TabIndex = 26;
+            this.btnVerDetalle.Text = "Ver Detalle";
+            this.btnVerDetalle.UseVisualStyleBackColor = true;
+            this.btnVerDetalle.Click += new System.EventHandler(this.btnVerDetalle_Click);
+            // 
             // FrmReVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1059, 547);
+            this.ClientSize = new System.Drawing.Size(1059, 591);
+            this.Controls.Add(this.btnVerDetalle);
             this.Controls.Add(this.gbxListado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);
@@ -164,5 +177,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.GroupBox gbxListado;
         private System.Windows.Forms.DataGridView dgvLista;
+        private System.Windows.Forms.Button btnVerDetalle;
     }
 }
