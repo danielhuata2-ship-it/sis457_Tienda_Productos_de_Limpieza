@@ -64,5 +64,15 @@ namespace CpProLimp
         {
             listar();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            listar();
+        }
+
+        private void txtParametro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) listar();
+        }
     }
 }

@@ -85,7 +85,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(5, -1);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1138, 63);
+            this.lblTitulo.Size = new System.Drawing.Size(1531, 63);
             this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Registro de Ventas - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,7 +94,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(526, 71);
+            this.label5.Location = new System.Drawing.Point(648, 71);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 25);
             this.label5.TabIndex = 14;
@@ -163,7 +163,7 @@
             // 
             this.lblInfoVenta.AutoSize = true;
             this.lblInfoVenta.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoVenta.Location = new System.Drawing.Point(890, 91);
+            this.lblInfoVenta.Location = new System.Drawing.Point(1232, 87);
             this.lblInfoVenta.Name = "lblInfoVenta";
             this.lblInfoVenta.Size = new System.Drawing.Size(206, 22);
             this.lblInfoVenta.TabIndex = 41;
@@ -173,7 +173,7 @@
             // 
             this.lblEmpleadoTexto.AutoSize = true;
             this.lblEmpleadoTexto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpleadoTexto.Location = new System.Drawing.Point(847, 128);
+            this.lblEmpleadoTexto.Location = new System.Drawing.Point(1189, 124);
             this.lblEmpleadoTexto.Name = "lblEmpleadoTexto";
             this.lblEmpleadoTexto.Size = new System.Drawing.Size(92, 19);
             this.lblEmpleadoTexto.TabIndex = 42;
@@ -182,7 +182,7 @@
             // lblEmpleado
             // 
             this.lblEmpleado.AutoSize = true;
-            this.lblEmpleado.Location = new System.Drawing.Point(945, 128);
+            this.lblEmpleado.Location = new System.Drawing.Point(1287, 124);
             this.lblEmpleado.Name = "lblEmpleado";
             this.lblEmpleado.Size = new System.Drawing.Size(138, 18);
             this.lblEmpleado.TabIndex = 43;
@@ -191,7 +191,7 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(945, 155);
+            this.lblUsuario.Location = new System.Drawing.Point(1287, 151);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(59, 18);
             this.lblUsuario.TabIndex = 45;
@@ -201,7 +201,7 @@
             // 
             this.lblUsuarioTexto.AutoSize = true;
             this.lblUsuarioTexto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioTexto.Location = new System.Drawing.Point(847, 155);
+            this.lblUsuarioTexto.Location = new System.Drawing.Point(1189, 151);
             this.lblUsuarioTexto.Name = "lblUsuarioTexto";
             this.lblUsuarioTexto.Size = new System.Drawing.Size(75, 19);
             this.lblUsuarioTexto.TabIndex = 44;
@@ -210,7 +210,7 @@
             // dtpFechaVenta
             // 
             this.dtpFechaVenta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaVenta.Location = new System.Drawing.Point(948, 179);
+            this.dtpFechaVenta.Location = new System.Drawing.Point(1290, 175);
             this.dtpFechaVenta.Name = "dtpFechaVenta";
             this.dtpFechaVenta.Size = new System.Drawing.Size(183, 26);
             this.dtpFechaVenta.TabIndex = 47;
@@ -219,7 +219,7 @@
             // 
             this.lblFechaTexto.AutoSize = true;
             this.lblFechaTexto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaTexto.Location = new System.Drawing.Point(847, 184);
+            this.lblFechaTexto.Location = new System.Drawing.Point(1189, 180);
             this.lblFechaTexto.Name = "lblFechaTexto";
             this.lblFechaTexto.Size = new System.Drawing.Size(66, 19);
             this.lblFechaTexto.TabIndex = 46;
@@ -260,13 +260,13 @@
             this.dgvLista.AllowUserToDeleteRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(16, 331);
+            this.dgvLista.Location = new System.Drawing.Point(11, 331);
             this.dgvLista.MultiSelect = false;
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(470, 375);
+            this.dgvLista.Size = new System.Drawing.Size(689, 375);
             this.dgvLista.TabIndex = 52;
             // 
             // btnAgregar
@@ -274,7 +274,7 @@
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Image = global::CpProLimp.Properties.Resources.carrito_de_compras;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAgregar.Location = new System.Drawing.Point(493, 524);
+            this.btnAgregar.Location = new System.Drawing.Point(706, 529);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAgregar.Size = new System.Drawing.Size(96, 82);
@@ -335,7 +335,7 @@
             // 
             this.lblDetalleVenta.AutoSize = true;
             this.lblDetalleVenta.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalleVenta.Location = new System.Drawing.Point(761, 292);
+            this.lblDetalleVenta.Location = new System.Drawing.Point(1070, 292);
             this.lblDetalleVenta.Name = "lblDetalleVenta";
             this.lblDetalleVenta.Size = new System.Drawing.Size(178, 24);
             this.lblDetalleVenta.TabIndex = 54;
@@ -347,20 +347,20 @@
             this.dgvVenta.AllowUserToDeleteRows = false;
             this.dgvVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVenta.Location = new System.Drawing.Point(595, 331);
+            this.dgvVenta.Location = new System.Drawing.Point(804, 331);
             this.dgvVenta.MultiSelect = false;
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.ReadOnly = true;
             this.dgvVenta.RowHeadersWidth = 51;
             this.dgvVenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVenta.Size = new System.Drawing.Size(484, 375);
+            this.dgvVenta.Size = new System.Drawing.Size(670, 375);
             this.dgvVenta.TabIndex = 55;
             // 
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(499, 467);
+            this.lblCantidad.Location = new System.Drawing.Point(712, 472);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(86, 20);
             this.lblCantidad.TabIndex = 59;
@@ -369,7 +369,7 @@
             // btnMenos
             // 
             this.btnMenos.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenos.Location = new System.Drawing.Point(1085, 534);
+            this.btnMenos.Location = new System.Drawing.Point(1480, 548);
             this.btnMenos.Name = "btnMenos";
             this.btnMenos.Size = new System.Drawing.Size(46, 46);
             this.btnMenos.TabIndex = 57;
@@ -379,7 +379,7 @@
             // 
             // nudCantidad
             // 
-            this.nudCantidad.Location = new System.Drawing.Point(500, 492);
+            this.nudCantidad.Location = new System.Drawing.Point(713, 497);
             this.nudCantidad.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -392,7 +392,7 @@
             // btnMas
             // 
             this.btnMas.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMas.Location = new System.Drawing.Point(1085, 473);
+            this.btnMas.Location = new System.Drawing.Point(1480, 487);
             this.btnMas.Name = "btnMas";
             this.btnMas.Size = new System.Drawing.Size(46, 46);
             this.btnMas.TabIndex = 56;
@@ -404,7 +404,7 @@
             // 
             this.lblTotalTexto.AutoSize = true;
             this.lblTotalTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalTexto.Location = new System.Drawing.Point(847, 256);
+            this.lblTotalTexto.Location = new System.Drawing.Point(1189, 252);
             this.lblTotalTexto.Name = "lblTotalTexto";
             this.lblTotalTexto.Size = new System.Drawing.Size(92, 25);
             this.lblTotalTexto.TabIndex = 60;
@@ -414,7 +414,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(998, 256);
+            this.lblTotal.Location = new System.Drawing.Point(1340, 252);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(58, 25);
             this.lblTotal.TabIndex = 61;
@@ -426,7 +426,7 @@
             this.pnlAcciones.Controls.Add(this.btnCancelar);
             this.pnlAcciones.Controls.Add(this.btnLimpiar);
             this.pnlAcciones.Controls.Add(this.btnBorrar);
-            this.pnlAcciones.Location = new System.Drawing.Point(557, 712);
+            this.pnlAcciones.Location = new System.Drawing.Point(867, 712);
             this.pnlAcciones.Name = "pnlAcciones";
             this.pnlAcciones.Size = new System.Drawing.Size(539, 51);
             this.pnlAcciones.TabIndex = 62;
@@ -513,7 +513,7 @@
             // 
             this.lblDescuentoMonto.AutoSize = true;
             this.lblDescuentoMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescuentoMonto.Location = new System.Drawing.Point(988, 232);
+            this.lblDescuentoMonto.Location = new System.Drawing.Point(1330, 228);
             this.lblDescuentoMonto.Name = "lblDescuentoMonto";
             this.lblDescuentoMonto.Size = new System.Drawing.Size(45, 24);
             this.lblDescuentoMonto.TabIndex = 66;
@@ -523,7 +523,7 @@
             // 
             this.lblDescuentoMontoTexto.AutoSize = true;
             this.lblDescuentoMontoTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescuentoMontoTexto.Location = new System.Drawing.Point(873, 232);
+            this.lblDescuentoMontoTexto.Location = new System.Drawing.Point(1215, 228);
             this.lblDescuentoMontoTexto.Name = "lblDescuentoMontoTexto";
             this.lblDescuentoMontoTexto.Size = new System.Drawing.Size(106, 24);
             this.lblDescuentoMontoTexto.TabIndex = 65;
@@ -533,7 +533,7 @@
             // 
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotal.Location = new System.Drawing.Point(989, 208);
+            this.lblSubtotal.Location = new System.Drawing.Point(1331, 204);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(45, 24);
             this.lblSubtotal.TabIndex = 68;
@@ -543,7 +543,7 @@
             // 
             this.lblSubtotalTexto.AutoSize = true;
             this.lblSubtotalTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotalTexto.Location = new System.Drawing.Point(874, 208);
+            this.lblSubtotalTexto.Location = new System.Drawing.Point(1216, 204);
             this.lblSubtotalTexto.Name = "lblSubtotalTexto";
             this.lblSubtotalTexto.Size = new System.Drawing.Size(82, 24);
             this.lblSubtotalTexto.TabIndex = 67;
@@ -554,7 +554,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1142, 766);
+            this.ClientSize = new System.Drawing.Size(1529, 766);
             this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.lblSubtotalTexto);
             this.Controls.Add(this.lblDescuentoMonto);
@@ -602,6 +602,7 @@
             this.Name = "FrmVentas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Ventas - Pro-Limp :::";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

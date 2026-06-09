@@ -43,11 +43,11 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(556, 96);
+            this.txtParametro.Location = new System.Drawing.Point(586, 92);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
-            this.txtParametro.Size = new System.Drawing.Size(241, 32);
+            this.txtParametro.Size = new System.Drawing.Size(420, 32);
             this.txtParametro.TabIndex = 17;
             this.txtParametro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtParametro_KeyPress);
             // 
@@ -57,7 +57,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(-2, -3);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(912, 86);
+            this.lblTitulo.Size = new System.Drawing.Size(1152, 86);
             this.lblTitulo.TabIndex = 14;
             this.lblTitulo.Text = "Reportes de Productos - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,7 +81,7 @@
             this.gbxListado.Margin = new System.Windows.Forms.Padding(4);
             this.gbxListado.Name = "gbxListado";
             this.gbxListado.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxListado.Size = new System.Drawing.Size(892, 405);
+            this.gbxListado.Size = new System.Drawing.Size(1132, 405);
             this.gbxListado.TabIndex = 20;
             this.gbxListado.TabStop = false;
             this.gbxListado.Text = "Lista de Productos";
@@ -98,7 +98,7 @@
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.ReadOnly = true;
             this.dgvLista.RowHeadersWidth = 51;
-            this.dgvLista.Size = new System.Drawing.Size(876, 367);
+            this.dgvLista.Size = new System.Drawing.Size(1116, 367);
             this.dgvLista.TabIndex = 0;
             // 
             // btnBuscar
@@ -106,7 +106,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(804, 85);
+            this.btnBuscar.Location = new System.Drawing.Point(1039, 81);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 47);
             this.btnBuscar.TabIndex = 18;
@@ -131,7 +131,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 557);
+            this.ClientSize = new System.Drawing.Size(1148, 557);
             this.Controls.Add(this.gbxListado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);

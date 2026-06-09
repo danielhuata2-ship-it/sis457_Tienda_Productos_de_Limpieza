@@ -73,7 +73,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(957, 89);
+            this.btnBuscar.Location = new System.Drawing.Point(1064, 89);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 47);
             this.btnBuscar.TabIndex = 8;
@@ -98,14 +98,14 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(0, -1);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1065, 86);
+            this.lblTitulo.Size = new System.Drawing.Size(1173, 86);
             this.lblTitulo.TabIndex = 6;
             this.lblTitulo.Text = "Proveedores - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(543, 99);
+            this.txtParametro.Location = new System.Drawing.Point(650, 99);
             this.txtParametro.MaxLength = 50;
             this.txtParametro.Name = "txtParametro";
             this.txtParametro.Size = new System.Drawing.Size(404, 26);
@@ -127,7 +127,7 @@
             this.gbxLista.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxLista.Location = new System.Drawing.Point(6, 142);
             this.gbxLista.Name = "gbxLista";
-            this.gbxLista.Size = new System.Drawing.Size(1048, 248);
+            this.gbxLista.Size = new System.Drawing.Size(1167, 248);
             this.gbxLista.TabIndex = 11;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Proveedores";
@@ -146,7 +146,7 @@
             this.dgvLista.RowHeadersWidth = 51;
             this.dgvLista.RowTemplate.Height = 24;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(1034, 209);
+            this.dgvLista.Size = new System.Drawing.Size(1153, 209);
             this.dgvLista.TabIndex = 0;
             // 
             // pnlAcciones
@@ -157,7 +157,7 @@
             this.pnlAcciones.Controls.Add(this.btnNuevo);
             this.pnlAcciones.Location = new System.Drawing.Point(6, 396);
             this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(1048, 56);
+            this.pnlAcciones.Size = new System.Drawing.Size(1167, 56);
             this.pnlAcciones.TabIndex = 12;
             // 
             // btnCerrar
@@ -165,7 +165,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpProLimp.Properties.Resources.cerrar;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(811, 6);
+            this.btnCerrar.Location = new System.Drawing.Point(948, 6);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(100, 47);
             this.btnCerrar.TabIndex = 11;
@@ -179,7 +179,7 @@
             this.btnBorrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrar.Image = global::CpProLimp.Properties.Resources.bote_de_basura;
             this.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrar.Location = new System.Drawing.Point(581, 6);
+            this.btnBorrar.Location = new System.Drawing.Point(700, 6);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(100, 47);
             this.btnBorrar.TabIndex = 10;
@@ -193,7 +193,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = global::CpProLimp.Properties.Resources.nota;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(372, 6);
+            this.btnEditar.Location = new System.Drawing.Point(431, 6);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 47);
             this.btnEditar.TabIndex = 9;
@@ -207,7 +207,7 @@
             this.btnNuevo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Image = global::CpProLimp.Properties.Resources.anadir;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(164, 6);
+            this.btnNuevo.Location = new System.Drawing.Point(181, 6);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 47);
             this.btnNuevo.TabIndex = 8;
@@ -231,27 +231,27 @@
             this.gbxDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxDatos.Location = new System.Drawing.Point(6, 458);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(1048, 156);
+            this.gbxDatos.Size = new System.Drawing.Size(1167, 156);
             this.gbxDatos.TabIndex = 13;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Agregar / Modificar datos:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(679, 101);
+            this.txtEmail.Location = new System.Drawing.Point(735, 101);
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(231, 49);
+            this.txtEmail.Size = new System.Drawing.Size(315, 49);
             this.txtEmail.TabIndex = 11;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(679, 24);
+            this.txtDireccion.Location = new System.Drawing.Point(735, 24);
             this.txtDireccion.MaxLength = 250;
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(231, 71);
+            this.txtDireccion.Size = new System.Drawing.Size(315, 71);
             this.txtDireccion.TabIndex = 10;
             // 
             // btnGuardar
@@ -259,7 +259,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = global::CpProLimp.Properties.Resources.disco_flexible;
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(962, 18);
+            this.btnGuardar.Location = new System.Drawing.Point(1076, 18);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnGuardar.Size = new System.Drawing.Size(79, 62);
@@ -274,7 +274,7 @@
             this.btnCanelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCanelar.Image = global::CpProLimp.Properties.Resources.archivo;
             this.btnCanelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCanelar.Location = new System.Drawing.Point(962, 89);
+            this.btnCanelar.Location = new System.Drawing.Point(1076, 89);
             this.btnCanelar.Name = "btnCanelar";
             this.btnCanelar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnCanelar.Size = new System.Drawing.Size(79, 61);
@@ -286,23 +286,24 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(261, 54);
+            this.txtTelefono.Location = new System.Drawing.Point(265, 98);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(183, 26);
+            this.txtTelefono.Size = new System.Drawing.Size(318, 26);
             this.txtTelefono.TabIndex = 8;
             // 
             // txtNombreEmpresa
             // 
-            this.txtNombreEmpresa.Location = new System.Drawing.Point(261, 24);
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(265, 24);
             this.txtNombreEmpresa.MaxLength = 50;
+            this.txtNombreEmpresa.Multiline = true;
             this.txtNombreEmpresa.Name = "txtNombreEmpresa";
-            this.txtNombreEmpresa.Size = new System.Drawing.Size(183, 26);
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(318, 68);
             this.txtNombreEmpresa.TabIndex = 7;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(548, 104);
+            this.lblEmail.Location = new System.Drawing.Point(604, 104);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(58, 20);
             this.lblEmail.TabIndex = 4;
@@ -311,7 +312,7 @@
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(548, 27);
+            this.lblDireccion.Location = new System.Drawing.Point(604, 27);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(89, 20);
             this.lblDireccion.TabIndex = 3;
@@ -320,7 +321,7 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(73, 57);
+            this.lblTelefono.Location = new System.Drawing.Point(77, 101);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(140, 20);
             this.lblTelefono.TabIndex = 1;
@@ -330,7 +331,7 @@
             // 
             this.lblNombreEmpresa.AutoSize = true;
             this.lblNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreEmpresa.Location = new System.Drawing.Point(73, 27);
+            this.lblNombreEmpresa.Location = new System.Drawing.Point(77, 27);
             this.lblNombreEmpresa.Name = "lblNombreEmpresa";
             this.lblNombreEmpresa.Size = new System.Drawing.Size(182, 20);
             this.lblNombreEmpresa.TabIndex = 0;
@@ -357,7 +358,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1066, 617);
+            this.ClientSize = new System.Drawing.Size(1174, 461);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.gbxLista);

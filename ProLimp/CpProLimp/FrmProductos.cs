@@ -91,12 +91,13 @@ namespace CpProLimp
 
         private void FrmProducto_Load(object sender, EventArgs e)
         {
-            Size = new Size(1112, 546);
+            Size = new Size(1299, 550);
             listar();
             cargarUnidadMedida();
             cargarProveedor();
             cargarCategoria();
             cargarMarca();
+            dtpFechaVencimiento.MinDate = DateTime.Today;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -108,7 +109,7 @@ namespace CpProLimp
         {
             esNuevo = true;
             pnlAcciones.Enabled = false;
-            Size = new Size(1112, 811);
+            Size = new Size(1299, 811);
             txtCodigo.Focus();
         }
 
@@ -116,7 +117,7 @@ namespace CpProLimp
         {
             esNuevo = false;
             pnlAcciones.Enabled = false;
-            Size = new Size(1143, 838);
+            Size = new Size(1299, 811);
 
             int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
             var producto = ProductoCln.obtenerUno(id);
@@ -258,38 +259,38 @@ namespace CpProLimp
                 producto.id_categoria = (int)cbxCategoria.SelectedValue;
                 producto.stock = (int)nudStock.Value;
                 producto.precio_unitario = nudPrecioUnitario.Value;
-                producto.precio_compra   = nudPrecioCompra.Value;
-                if (chkSinVencimiento.Checked)
+                producto.precio_compra = nudPrecioCompra.Value;
+                if (chkSinVencimiento.Checked) 
                     producto.fecha_vencimiento = null;
                 else
                     producto.fecha_vencimiento = dtpFechaVencimiento.Value;
-                producto.id_proveedor = (int)cbxProveedor.SelectedValue;
-                producto.cantidad_minima_stock = (int)nudCantidadMinimaStock.Value;
-                producto.usuario_registro = Util.empleado.usuario;
-                if (esNuevo)
-                {
-                    producto.fecha_registro = DateTime.Now;
-                    producto.estado = 1;
-                    ProductoCln.insertar(producto);
+                    producto.id_proveedor = (int)cbxProveedor.SelectedValue;
+                    producto.cantidad_minima_stock = (int)nudCantidadMinimaStock.Value;
+                    producto.usuario_registro = Util.empleado.usuario;
+                    if (esNuevo)
+                    {
+                        producto.fecha_registro = DateTime.Now;
+                        producto.estado = 1;
+                        ProductoCln.insertar(producto);
 
-                    MessageBox.Show("Producto agregado correctamente",
-                        "::: Mensaje - ProLimp :::",
+                        MessageBox.Show("Producto agregado correctamente",
+                            "::: Mensaje - ProLimp :::",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        producto.id = (int)dgvLista.CurrentRow.Cells["id"].Value;
+                        ProductoCln.actualizar(producto);
+
+                        MessageBox.Show("Producto actualizado correctamente",
+                            "::: Mensaje - ProLimp :::",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                    listar();
+                    btnCancelar.PerformClick();
+                    MessageBox.Show("Producto guardado correctamente", "::: Mensaje - ProLimp :::",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    producto.id = (int)dgvLista.CurrentRow.Cells["id"].Value;
-                    ProductoCln.actualizar(producto);
-
-                    MessageBox.Show("Producto actualizado correctamente",
-                        "::: Mensaje - ProLimp :::",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-                listar();
-                btnCancelar.PerformClick();
-                MessageBox.Show("Producto guardado correctamente", "::: Mensaje - ProLimp :::",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -315,7 +316,7 @@ namespace CpProLimp
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(1112, 546);
+            Size = new Size(1299, 550);
             pnlAcciones.Enabled = true;
             limpiar();
         }
