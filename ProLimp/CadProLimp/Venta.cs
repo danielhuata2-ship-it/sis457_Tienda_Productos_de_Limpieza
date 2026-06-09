@@ -21,12 +21,12 @@ namespace CadProLimp
         }
     
         public int id { get; set; }
-        public int idcliente { get; set; }
-        public int idempleado { get; set; }
+        public int id_cliente { get; set; }
+        public int id_empleado { get; set; }
         public System.DateTime fecha { get; set; }
         public decimal total { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public string usuario_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public short estado { get; set; }
     
         public virtual Cliente Cliente { get; set; }

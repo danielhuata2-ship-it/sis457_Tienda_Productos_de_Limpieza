@@ -14,10 +14,10 @@ namespace CadProLimp
     public partial class paClienteListar_Result
     {
         public int id { get; set; }
-        public string razonSocial { get; set; }
-        public string cedulaIdentidad { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public string razon_social { get; set; }
+        public string cedula_identidad { get; set; }
+        public string usuario_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public short estado { get; set; }
     }
 }

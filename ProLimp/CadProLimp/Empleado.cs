@@ -22,14 +22,14 @@ namespace CadProLimp
     
         public int id { get; set; }
         public string nombres { get; set; }
-        public string primerApellido { get; set; }
-        public string segundoApellido { get; set; }
-        public string cedulaIdentidad { get; set; }
+        public string primer_apellido { get; set; }
+        public string segundo_apellido { get; set; }
+        public string cedula_identidad { get; set; }
         public string usuario { get; set; }
         public string clave { get; set; }
         public long telefono { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public string usuario_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public short estado { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

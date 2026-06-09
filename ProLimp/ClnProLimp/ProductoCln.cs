@@ -36,17 +36,17 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 var existe = context.Producto.Find(producto.id);
-                existe.idunidadMedida = producto.idunidadMedida;
-                existe.idcategoria = producto.idcategoria;
-                existe.idmarca = producto.idmarca;
-                existe.idproveedor = producto.idproveedor;
+                existe.id_unidad_medida = producto.id_unidad_medida;
+                existe.id_categoria = producto.id_categoria;
+                existe.id_marca = producto.id_marca;
+                existe.id_proveedor = producto.id_proveedor;
                 existe.codigo = producto.codigo;
                 existe.nombre = producto.nombre;
-                existe.precioUnitario = producto.precioUnitario;
+                existe.precio_unitario = producto.precio_unitario;
                 existe.stock = producto.stock;
-                existe.fechaVencimiento = producto.fechaVencimiento;
-                existe.precioCompra = producto.precioCompra;
-                existe.cantidadMinimaStock = producto.cantidadMinimaStock;
+                existe.fecha_vencimiento = producto.fecha_vencimiento;
+                existe.precio_compra = producto.precio_compra;
+                existe.cantidad_minima_stock = producto.cantidad_minima_stock;
                 return context.SaveChanges();
 
             }
@@ -72,7 +72,7 @@ namespace ClnProLimp
             {
                 var existe = context.Producto.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }

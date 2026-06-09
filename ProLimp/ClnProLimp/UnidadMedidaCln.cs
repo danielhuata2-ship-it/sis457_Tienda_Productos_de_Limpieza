@@ -35,7 +35,7 @@ namespace ClnProLimp
             {
                 var existe = context.UnidadMedida.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
 

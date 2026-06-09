@@ -15,6 +15,7 @@ GO
 ALTER ROLE db_owner ADD MEMBER usrprolimp
 GO
 
+
 DROP TABLE IF EXISTS DetalleVenta;
 DROP TABLE IF EXISTS Venta;
 DROP TABLE IF EXISTS Producto;
@@ -43,13 +44,13 @@ CREATE TABLE Marca(
 
 CREATE TABLE Cliente(
 	id INT NOT NULL PRIMARY KEY IDENTITY (1, 1),
-	razonSocial VARCHAR (50) NULL,
-	cedulaIdentidad VARCHAR (10) NULL,
+	razon_social VARCHAR (50) NULL,
+	cedula_identidad VARCHAR (10) NULL,
 );
 
 CREATE TABLE Proveedor(
 	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-	nombreEmpresa VARCHAR (50) NOT NULL,
+	nombre_empresa VARCHAR (50) NOT NULL,
 	telefono BIGINT NOT NULL,
 	direccion VARCHAR (250) NULL,
 	email VARCHAR (100) NOT NULL
@@ -58,9 +59,9 @@ CREATE TABLE Proveedor(
  CREATE TABLE Empleado(
 	id INT NOT NULL PRIMARY KEY IDENTITY (1, 1),
 	nombres VARCHAR(30) NOT NULL,
-	primerApellido VARCHAR(30) NOT NULL,
-	segundoApellido VARCHAR (30) NULL,
-	cedulaIdentidad VARCHAR (10) NOT NULL,
+	primer_apellido VARCHAR(30) NOT NULL,
+	segundo_apellido VARCHAR (30) NULL,
+	cedula_identidad VARCHAR (10) NOT NULL,
 	usuario VARCHAR(50) NOT NULL UNIQUE,
 	clave VARCHAR (200) NOT NULL,
 	telefono BIGINT NOT NULL
@@ -68,79 +69,80 @@ CREATE TABLE Proveedor(
 
  CREATE TABLE Producto(
 	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-	idunidadMedida INT NOT NULL,
-	idproveedor INT NOT NULL,
-	idcategoria INT NULL,
-	idmarca INT NULL,
+	id_unidad_medida INT NOT NULL,
+	id_proveedor INT NOT NULL,
+	id_categoria INT NULL,
+	id_marca INT NULL,
 	codigo VARCHAR (20) NOT NULL,
 	nombre VARCHAR (100)  NOT NULL,
-	precioUnitario DECIMAL NOT NULL CHECK (precioUnitario>0),
+	precio_unitario DECIMAL NOT NULL CHECK (precio_unitario>0),
 	stock INT NOT NULL,
-	fechaVencimiento DATE NULL,
-	precioCompra DECIMAL NOT NULL CHECK (precioCompra >= 0),
-	cantidadMinimaStock INT NOT NULL DEFAULT 5,
-	CONSTRAINT fk_Producto_UnidadMedida FOREIGN KEY (idunidadMedida) REFERENCES UnidadMedida(id),
-	CONSTRAINT fk_Producto_Proveedor FOREIGN KEY (idProveedor) REFERENCES Proveedor(id),
-	CONSTRAINT fk_Producto_Categoria FOREIGN KEY (idcategoria) REFERENCES Categoria(id),
-	CONSTRAINT fk_Producto_Marca FOREIGN KEY (idmarca) REFERENCES Marca(id)
+	fecha_vencimiento DATE NULL,
+	precio_compra DECIMAL NOT NULL CHECK (precio_compra >= 0),
+	cantidad_minima_stock INT NOT NULL DEFAULT 5,
+	CONSTRAINT fk_Producto_UnidadMedida FOREIGN KEY (id_unidad_medida) REFERENCES UnidadMedida(id),
+	CONSTRAINT fk_Producto_Proveedor FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id),
+	CONSTRAINT fk_Producto_Categoria FOREIGN KEY (id_categoria) REFERENCES Categoria(id),
+	CONSTRAINT fk_Producto_Marca FOREIGN KEY (id_marca) REFERENCES Marca(id)
 );
 
 CREATE TABLE Venta(
 	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-	idcliente INT NOT NULL,
-	idempleado INT NOT NULL,
+	id_cliente INT NOT NULL,
+	id_empleado INT NOT NULL,
 	fecha DATE NOT NULL DEFAULT GETDATE(),
 	total DECIMAL NOT NULL CHECK (total>0),
-	CONSTRAINT fk_Venta_Cliente FOREIGN KEY (idcliente) REFERENCES Cliente(id),
-	CONSTRAINT fk_Venta_Empleado FOREIGN KEY (idempleado) REFERENCES Empleado(id)
+	CONSTRAINT fk_Venta_Cliente FOREIGN KEY (id_cliente) REFERENCES Cliente(id),
+	CONSTRAINT fk_Venta_Empleado FOREIGN KEY (id_empleado) REFERENCES Empleado(id)
 );
 
 CREATE TABLE DetalleVenta(
 	id INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-	idventa INT NOT NULL,
-	idproducto INT NOT NULL,
+	id_venta INT NOT NULL,
+	id_producto INT NOT NULL,
 	cantidad DECIMAL NOT NULL,
-	precioUnitario DECIMAL NOT NULL CHECK (precioUnitario>0),
+	precio_unitario DECIMAL NOT NULL CHECK (precio_unitario>0),
 	subtotal DECIMAL NOT NULL,
-	CONSTRAINT fk_DetalleVenta_Venta FOREIGN KEY (idventa) REFERENCES Venta(id),
-	CONSTRAINT fk_DetalleVenta_Producto FOREIGN KEY (idproducto) REFERENCES Producto(id)
+	CONSTRAINT fk_DetalleVenta_Venta FOREIGN KEY (id_venta) REFERENCES Venta(id),
+	CONSTRAINT fk_DetalleVenta_Producto FOREIGN KEY (id_producto) REFERENCES Producto(id)
 );
 
-ALTER TABLE UnidadMedida ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE UnidadMedida ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE UnidadMedida ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE UnidadMedida ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE UnidadMedida ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Categoria ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Categoria ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Categoria ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Categoria ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Categoria ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Marca ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Marca ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Marca ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Marca ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Marca ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Cliente ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Cliente ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Cliente ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Cliente ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Cliente ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Proveedor ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Proveedor ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Proveedor ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Proveedor ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Proveedor ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Empleado ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Empleado ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Empleado ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Empleado ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Empleado ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Producto ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Producto ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Producto ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Producto ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Producto ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE Venta ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE Venta ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE Venta ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE Venta ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE Venta ADD estado SMALLINT NOT NULL DEFAULT 1;
 
-ALTER TABLE DetalleVenta ADD usuarioRegistro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
-ALTER TABLE DetalleVenta ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
+ALTER TABLE DetalleVenta ADD usuario_registro VARCHAR(50) NOT NULL DEFAULT SUSER_NAME();
+ALTER TABLE DetalleVenta ADD fecha_registro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE DetalleVenta ADD estado SMALLINT NOT NULL DEFAULT 1;
+
 
 GO
 DROP PROC IF EXISTS paUnidadMedidaListar;
@@ -148,10 +150,10 @@ GO
 CREATE PROC paUnidadMedidaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        um.id, um.descripcion, um.usuarioRegistro, um.fechaRegistro, um.estado
+    SELECT
+        um.id, um.descripcion, um.usuario_registro, um.fecha_registro, um.estado
     FROM UnidadMedida um
-    WHERE um.estado > -1 
+    WHERE um.estado > -1
       AND um.descripcion LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY um.estado DESC, um.descripcion ASC;
 END;
@@ -165,8 +167,8 @@ GO
 CREATE PROC paCategoriaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        c.id,c.nombre,c.usuarioRegistro,c.fechaRegistro,c.estado
+    SELECT
+        c.id, c.nombre, c.usuario_registro, c.fecha_registro, c.estado
     FROM Categoria c
     WHERE c.estado > -1
       AND c.nombre LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
@@ -176,14 +178,14 @@ GO
 
 EXEC paCategoriaListar '';
 
-
 GO
 DROP PROC IF EXISTS paMarcaListar;
 GO
 CREATE PROC paMarcaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT m.id,m.nombre,m.usuarioRegistro,m.fechaRegistro,m.estado
+    SELECT
+        m.id, m.nombre, m.usuario_registro, m.fecha_registro, m.estado
     FROM Marca m
     WHERE m.estado > -1
       AND m.nombre LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
@@ -199,16 +201,22 @@ GO
 CREATE PROC paClienteListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        c.id, c.razonSocial, c.cedulaIdentidad, c.usuarioRegistro, c.fechaRegistro, c.estado
+    SELECT
+        c.id,
+        c.razon_social,
+        c.cedula_identidad,
+        c.usuario_registro,
+        c.fecha_registro,
+        c.estado
     FROM Cliente c
     WHERE c.estado > -1
-      AND ( ISNULL(c.razonSocial, '') + ' ' + ISNULL(c.cedulaIdentidad, '') ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
-    ORDER BY 
-        c.estado DESC, c.razonSocial ASC;  
+      AND (
+            ISNULL(c.razon_social, '') + ' ' +
+            ISNULL(c.cedula_identidad, '')
+          ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+    ORDER BY c.estado DESC, c.razon_social ASC;
 END;
 GO
-
 
 EXEC paClienteListar '';
 
@@ -218,11 +226,23 @@ GO
 CREATE PROC paProveedorListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT pr.id, pr.nombreEmpresa, pr.telefono, pr.direccion, pr.email, pr.usuarioRegistro, pr.fechaRegistro, pr.estado
+    SELECT
+        pr.id,
+        pr.nombre_empresa,
+        pr.telefono,
+        pr.direccion,
+        pr.email,
+        pr.usuario_registro,
+        pr.fecha_registro,
+        pr.estado
     FROM Proveedor pr
-    WHERE pr.estado > -1 
-      AND (pr.nombreEmpresa + pr.email + ISNULL(pr.direccion, '')) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
-    ORDER BY pr.estado DESC, pr.nombreEmpresa ASC;
+    WHERE pr.estado > -1
+      AND (
+            pr.nombre_empresa +
+            pr.email +
+            ISNULL(pr.direccion, '')
+          ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+    ORDER BY pr.estado DESC, pr.nombre_empresa ASC;
 END;
 GO
 
@@ -234,11 +254,25 @@ GO
 CREATE PROC paEmpleadoListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        e.id, e.nombres, e.primerApellido, e.segundoApellido, e.usuario, e.telefono, e.usuarioRegistro, e.fechaRegistro, e.estado
+    SELECT
+        e.id,
+        e.nombres,
+        e.primer_apellido,
+        e.segundo_apellido,
+        e.usuario,
+        e.telefono,
+        e.usuario_registro,
+        e.fecha_registro,
+        e.estado
     FROM Empleado e
-    WHERE e.estado > -1 
-      AND (e.nombres + ISNULL(e.primerApellido, '') + ISNULL(e.segundoApellido, '') + e.usuario + ISNULL(e.cedulaIdentidad, '')) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+    WHERE e.estado > -1
+      AND (
+            e.nombres +
+            ISNULL(e.primer_apellido, '') +
+            ISNULL(e.segundo_apellido, '') +
+            e.usuario +
+            ISNULL(e.cedula_identidad, '')
+          ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY e.estado DESC, e.nombres ASC;
 END;
 GO
@@ -251,38 +285,38 @@ GO
 CREATE PROC paProductoListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
+    SELECT
         p.id,
-        p.idunidadMedida,
-        p.idproveedor,
-        p.idmarca,
-        p.idcategoria,
+        p.id_unidad_medida,
+        p.id_proveedor,
+        p.id_marca,
+        p.id_categoria,
         p.codigo,
         p.nombre,
-        ISNULL(c.nombre, '') AS categoria,       
-        um.descripcion AS unidadMedida,
+        ISNULL(c.nombre, '') AS categoria,
+        um.descripcion AS unidad_medida,
         ISNULL(m.nombre, '') AS marca,
-        p.stock,  
-        p.precioUnitario AS precioVenta,
-        p.fechaVencimiento,
-        p.precioCompra,
-        p.cantidadMinimaStock,
-        pr.nombreEmpresa AS proveedor,
-        p.usuarioRegistro,
-        p.fechaRegistro,
+        p.stock,
+        p.precio_unitario AS precio_venta,
+        p.fecha_vencimiento,
+        p.precio_compra,
+        p.cantidad_minima_stock,
+        pr.nombre_empresa AS proveedor,
+        p.usuario_registro,
+        p.fecha_registro,
         p.estado
     FROM Producto p
-    INNER JOIN UnidadMedida um ON um.id = p.idunidadMedida
-    INNER JOIN Proveedor pr ON pr.id = p.idproveedor
-    LEFT JOIN Categoria c ON c.id = p.idcategoria
-    LEFT JOIN Marca m ON m.id = p.idmarca
-    WHERE p.estado > -1 
+    INNER JOIN UnidadMedida um ON um.id = p.id_unidad_medida
+    INNER JOIN Proveedor pr ON pr.id = p.id_proveedor
+    LEFT JOIN Categoria c ON c.id = p.id_categoria
+    LEFT JOIN Marca m ON m.id = p.id_marca
+    WHERE p.estado > -1
       AND (
-            ISNULL(p.codigo,'') + ' ' + 
-            ISNULL(p.nombre,'') + ' ' + 
-            ISNULL(c.nombre,'') + ' ' + 
-            ISNULL(um.descripcion,'') + ' ' + 
-            ISNULL(pr.nombreEmpresa,'') + ' ' +
+            ISNULL(p.codigo,'') + ' ' +
+            ISNULL(p.nombre,'') + ' ' +
+            ISNULL(c.nombre,'') + ' ' +
+            ISNULL(um.descripcion,'') + ' ' +
+            ISNULL(pr.nombre_empresa,'') + ' ' +
             ISNULL(m.nombre,'')
           ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY p.estado DESC, p.nombre ASC;
@@ -297,11 +331,19 @@ GO
 CREATE PROC paVentaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        v.id, v.idcliente, v.idempleado, v.fecha, v.total, v.usuarioRegistro, v.fechaRegistro, v.estado
+    SELECT
+        v.id,
+        v.id_cliente,
+        v.id_empleado,
+        v.fecha,
+        v.total,
+        v.usuario_registro,
+        v.fecha_registro,
+        v.estado
     FROM Venta v
-    WHERE v.estado > -1 
-      AND CAST(v.fecha AS VARCHAR) + CAST(v.total AS VARCHAR) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+    WHERE v.estado > -1
+      AND CAST(v.fecha AS VARCHAR) + CAST(v.total AS VARCHAR)
+          LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY v.estado DESC, v.fecha DESC;
 END;
 GO
@@ -314,11 +356,23 @@ GO
 CREATE PROC paDetalleVentaListar @parametro VARCHAR(50)
 AS
 BEGIN
-    SELECT 
-        dv.id, dv.idventa, dv.idproducto, dv.cantidad, dv.precioUnitario, dv.subtotal, dv.usuarioRegistro, dv.fechaRegistro, dv.estado
+    SELECT
+        dv.id,
+        dv.id_venta,
+        dv.id_producto,
+        dv.cantidad,
+        dv.precio_unitario,
+        dv.subtotal,
+        dv.usuario_registro,
+        dv.fecha_registro,
+        dv.estado
     FROM DetalleVenta dv
-    WHERE dv.estado > -1 
-      AND (CAST(dv.cantidad AS VARCHAR) + CAST(dv.precioUnitario AS VARCHAR) + CAST(dv.subtotal AS VARCHAR)) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+    WHERE dv.estado > -1
+      AND (
+            CAST(dv.cantidad AS VARCHAR) +
+            CAST(dv.precio_unitario AS VARCHAR) +
+            CAST(dv.subtotal AS VARCHAR)
+          ) LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
     ORDER BY dv.estado DESC, dv.id ASC;
 END;
 GO
@@ -346,7 +400,7 @@ VALUES
 
 SELECT * FROM Categoria;
 
-INSERT INTO Proveedor(nombreEmpresa,telefono,direccion,email)
+INSERT INTO Proveedor(nombre_empresa,telefono,direccion,email)
 VALUES ('Distribuidora Limpieza Total SRL', '76451234', 'Av. Blanco Galindo', 'contacto@limpiezatotal.com')
 
 SELECT * FROM Proveedor;
@@ -356,13 +410,13 @@ VALUES ('Litro'),('Kilo'),('Gramo'),('Mililitro'),('Paquete'),('Caja')
 
 SELECT * FROM UnidadMedida
 
-INSERT INTO Producto(idunidadMedida,idproveedor,idmarca,idcategoria,codigo,nombre,precioUnitario,stock,fechaVencimiento,precioCompra,cantidadMinimaStock)
+INSERT INTO Producto(id_unidad_medida,id_proveedor,id_marca,id_categoria,codigo,nombre,precio_unitario,stock,fecha_vencimiento,precio_compra,cantidad_minima_stock)
 VALUES ('6','1','1','1','PROD001','Limpia Baños','25.50','100','2026-05-10','15.00','10')
 
 DELETE FROM Empleado
 WHERE usuario = 'dhuata'
 
-INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usuario,clave,telefono)
+INSERT INTO Empleado(nombres,primer_apellido,segundo_apellido,cedula_identidad,usuario,clave,telefono)
 VALUES ('Daniel','Huata','Florse','13464570','dhuata','i0hcoO/nssY6WOs9pOp5Xw==','67625178')
 
 INSERT INTO Empleado(nombres,primerApellido,segundoApellido,cedulaIdentidad,usuario,clave,telefono)
@@ -370,7 +424,7 @@ VALUES ('Erika','Mendoza','Daza','10390430','edaza','oUOsoOGI3rrEsSxCa0AXBW9n4JF
 
 SELECT * FROM Empleado
 
-INSERT INTO Cliente(razonSocial,cedulaIdentidad)
+INSERT INTO Cliente(razon_social,cedula_identidad)
 VALUES ('Consumidor Final','0')
 
 SELECT * FROM Cliente

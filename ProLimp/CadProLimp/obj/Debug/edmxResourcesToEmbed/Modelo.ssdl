@@ -6,8 +6,8 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Cliente">
@@ -15,10 +15,10 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="razonSocial" Type="varchar" MaxLength="50" />
-    <Property Name="cedulaIdentidad" Type="varchar" MaxLength="10" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="razon_social" Type="varchar" MaxLength="50" />
+    <Property Name="cedula_identidad" Type="varchar" MaxLength="10" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="DetalleVenta">
@@ -26,13 +26,13 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="idventa" Type="int" Nullable="false" />
-    <Property Name="idproducto" Type="int" Nullable="false" />
+    <Property Name="id_venta" Type="int" Nullable="false" />
+    <Property Name="id_producto" Type="int" Nullable="false" />
     <Property Name="cantidad" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="precioUnitario" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="precio_unitario" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="subtotal" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Empleado">
@@ -41,14 +41,14 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombres" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="primerApellido" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="segundoApellido" Type="varchar" MaxLength="30" />
-    <Property Name="cedulaIdentidad" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="primer_apellido" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="segundo_apellido" Type="varchar" MaxLength="30" />
+    <Property Name="cedula_identidad" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="usuario" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="clave" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="clave" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="telefono" Type="bigint" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Marca">
@@ -57,8 +57,8 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Producto">
@@ -66,19 +66,19 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="idunidadMedida" Type="int" Nullable="false" />
-    <Property Name="idproveedor" Type="int" Nullable="false" />
-    <Property Name="idcategoria" Type="int" />
-    <Property Name="idmarca" Type="int" />
+    <Property Name="id_unidad_medida" Type="int" Nullable="false" />
+    <Property Name="id_proveedor" Type="int" Nullable="false" />
+    <Property Name="id_categoria" Type="int" />
+    <Property Name="id_marca" Type="int" />
     <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="precioUnitario" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="precio_unitario" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="stock" Type="int" Nullable="false" />
-    <Property Name="fechaVencimiento" Type="date" />
-    <Property Name="precioCompra" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="cantidadMinimaStock" Type="int" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="fecha_vencimiento" Type="date" />
+    <Property Name="precio_compra" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="cantidad_minima_stock" Type="int" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Proveedor">
@@ -86,12 +86,12 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombreEmpresa" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre_empresa" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="telefono" Type="bigint" Nullable="false" />
     <Property Name="direccion" Type="varchar" MaxLength="250" />
-    <Property Name="email" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="UnidadMedida">
@@ -100,8 +100,8 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="descripcion" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Venta">
@@ -109,12 +109,12 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="idcliente" Type="int" Nullable="false" />
-    <Property Name="idempleado" Type="int" Nullable="false" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="id_empleado" Type="int" Nullable="false" />
     <Property Name="fecha" Type="date" Nullable="false" />
     <Property Name="total" Type="decimal" Precision="18" Scale="0" Nullable="false" />
-    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="usuario_registro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_registro" Type="datetime" Nullable="false" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <Association Name="fk_DetalleVenta_Producto">
@@ -125,7 +125,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="DetalleVenta">
-        <PropertyRef Name="idproducto" />
+        <PropertyRef Name="id_producto" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -137,7 +137,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="DetalleVenta">
-        <PropertyRef Name="idventa" />
+        <PropertyRef Name="id_venta" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -149,7 +149,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Producto">
-        <PropertyRef Name="idcategoria" />
+        <PropertyRef Name="id_categoria" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -161,7 +161,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Producto">
-        <PropertyRef Name="idmarca" />
+        <PropertyRef Name="id_marca" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -173,7 +173,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Producto">
-        <PropertyRef Name="idproveedor" />
+        <PropertyRef Name="id_proveedor" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -185,7 +185,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Producto">
-        <PropertyRef Name="idunidadMedida" />
+        <PropertyRef Name="id_unidad_medida" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -197,7 +197,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Venta">
-        <PropertyRef Name="idcliente" />
+        <PropertyRef Name="id_cliente" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -209,7 +209,7 @@
         <PropertyRef Name="id" />
       </Principal>
       <Dependent Role="Venta">
-        <PropertyRef Name="idempleado" />
+        <PropertyRef Name="id_empleado" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

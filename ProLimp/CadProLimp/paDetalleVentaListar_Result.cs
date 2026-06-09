@@ -14,13 +14,13 @@ namespace CadProLimp
     public partial class paDetalleVentaListar_Result
     {
         public int id { get; set; }
-        public int idventa { get; set; }
-        public int idproducto { get; set; }
+        public int id_venta { get; set; }
+        public int id_producto { get; set; }
         public decimal cantidad { get; set; }
-        public decimal precioUnitario { get; set; }
+        public decimal precio_unitario { get; set; }
         public decimal subtotal { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public string usuario_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public short estado { get; set; }
     }
 }

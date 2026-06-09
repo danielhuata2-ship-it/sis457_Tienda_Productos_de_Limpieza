@@ -29,23 +29,23 @@ namespace CpProLimp
 
             dgvLista.DataSource = lista;
             dgvLista.Columns["id"].Visible = false;
-            dgvLista.Columns["idunidadMedida"].Visible = false;
-            dgvLista.Columns["idproveedor"].Visible = false;
-            dgvLista.Columns["idcategoria"].Visible = false;
-            dgvLista.Columns["idmarca"].Visible = false;
+            dgvLista.Columns["id_unidad_medida"].Visible = false;
+            dgvLista.Columns["id_proveedor"].Visible = false;
+            dgvLista.Columns["id_categoria"].Visible = false;
+            dgvLista.Columns["id_marca"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["nombre"].HeaderText = "Nombre";
             dgvLista.Columns["categoria"].HeaderText = "Categoria";
             dgvLista.Columns["marca"].HeaderText = "Marca";
-            dgvLista.Columns["unidadMedida"].HeaderText = "Unidad de Medida";
+            dgvLista.Columns["unidad_medida"].HeaderText = "Unidad de Medida";
             dgvLista.Columns["stock"].HeaderText = "Stock";
-            dgvLista.Columns["precioVenta"].HeaderText = "Precio Venta";
-            dgvLista.Columns["fechaVencimiento"].HeaderText = "Fecha de Vencimiento";
-            dgvLista.Columns["cantidadMinimaStock"].HeaderText = "Cantidad Mínima Stock";
+            dgvLista.Columns["precio_venta"].HeaderText = "Precio Venta";
+            dgvLista.Columns["fecha_vencimiento"].HeaderText = "Fecha de Vencimiento";
+            dgvLista.Columns["cantidad_minima_stock"].HeaderText = "Cantidad Mínima Stock";
             dgvLista.Columns["proveedor"].HeaderText = "Proveedor";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha Registro";
 
             if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["codigo"];
         }
@@ -66,7 +66,7 @@ namespace CpProLimp
             var lista = ProveedorCln.listar();
             cbxProveedor.DataSource = lista;
             cbxProveedor.ValueMember = "id";
-            cbxProveedor.DisplayMember = "nombreEmpresa";
+            cbxProveedor.DisplayMember = "nombre_empresa";
             cbxProveedor.SelectedIndex = -1;
         }
 
@@ -123,13 +123,13 @@ namespace CpProLimp
 
             txtCodigo.Text = producto.codigo;
             txtNombreProducto.Text = producto.nombre;
-            cbxUnidadMedida.SelectedValue = producto.idunidadMedida;
-            cbxMarca.SelectedValue = producto.idmarca;
-            cbxCategoria.SelectedValue = producto.idcategoria;
+            cbxUnidadMedida.SelectedValue = producto.id_unidad_medida;
+            cbxMarca.SelectedValue = producto.id_marca;
+            cbxCategoria.SelectedValue = producto.id_categoria;
             nudStock.Value = producto.stock;
-            nudPrecioUnitario.Value = producto.precioUnitario;
-            nudPrecioCompra.Value = producto.precioCompra;
-            if (producto.fechaVencimiento == null)
+            nudPrecioUnitario.Value = producto.precio_unitario;
+            nudPrecioCompra.Value = producto.precio_compra;
+            if (producto.fecha_vencimiento == null)
             {
                 chkSinVencimiento.Checked = true;
                 dtpFechaVencimiento.Value = DateTime.Now;
@@ -137,10 +137,10 @@ namespace CpProLimp
             else
             {
                 chkSinVencimiento.Checked = false;
-                dtpFechaVencimiento.Value = producto.fechaVencimiento.Value;
+                dtpFechaVencimiento.Value = producto.fecha_vencimiento.Value;
             }
-            cbxProveedor.SelectedValue = producto.idproveedor;
-            nudCantidadMinimaStock.Value = producto.cantidadMinimaStock;
+            cbxProveedor.SelectedValue = producto.id_proveedor;
+            nudCantidadMinimaStock.Value = producto.cantidad_minima_stock;
         }
 
         private void limpiar()
@@ -253,22 +253,22 @@ namespace CpProLimp
                 var producto = new Producto();
                 producto.codigo = txtCodigo.Text.Trim();
                 producto.nombre = txtNombreProducto.Text.Trim();
-                producto.idunidadMedida = (int)cbxUnidadMedida.SelectedValue;
-                producto.idmarca = (int)cbxMarca.SelectedValue;
-                producto.idcategoria = (int)cbxCategoria.SelectedValue;
+                producto.id_unidad_medida = (int)cbxUnidadMedida.SelectedValue;
+                producto.id_marca = (int)cbxMarca.SelectedValue;
+                producto.id_categoria = (int)cbxCategoria.SelectedValue;
                 producto.stock = (int)nudStock.Value;
-                producto.precioUnitario = nudPrecioUnitario.Value;
-                producto.precioCompra = nudPrecioCompra.Value;
+                producto.precio_unitario = nudPrecioUnitario.Value;
+                producto.precio_compra   = nudPrecioCompra.Value;
                 if (chkSinVencimiento.Checked)
-                    producto.fechaVencimiento = null;
+                    producto.fecha_vencimiento = null;
                 else
-                    producto.fechaVencimiento = dtpFechaVencimiento.Value;
-                producto.idproveedor = (int)cbxProveedor.SelectedValue;
-                producto.cantidadMinimaStock = (int)nudCantidadMinimaStock.Value;
-                producto.usuarioRegistro = "admin";
+                    producto.fecha_vencimiento = dtpFechaVencimiento.Value;
+                producto.id_proveedor = (int)cbxProveedor.SelectedValue;
+                producto.cantidad_minima_stock = (int)nudCantidadMinimaStock.Value;
+                producto.usuario_registro = Util.empleado.usuario;
                 if (esNuevo)
                 {
-                    producto.fechaRegistro = DateTime.Now;
+                    producto.fecha_registro = DateTime.Now;
                     producto.estado = 1;
                     ProductoCln.insertar(producto);
 
@@ -301,7 +301,7 @@ namespace CpProLimp
                 "::: Mensaje - ProLimp :::", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                ProductoCln.eliminar(id, "admin");
+                ProductoCln.eliminar(id, Util.empleado.usuario);
                 listar();
                 MessageBox.Show("Producto dado de baja correctamente", "::: Mensaje - ProLimp :::",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

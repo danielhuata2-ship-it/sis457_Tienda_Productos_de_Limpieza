@@ -13,7 +13,7 @@ namespace ClnProLimp
         {
             using (var context = new LabProLimpEntities())
             {
-                return context.Cliente.Where(c => c.razonSocial == cliente && c.cedulaIdentidad == cedulaIdentidad).FirstOrDefault();
+                return context.Cliente.Where(c => c.razon_social == cliente && c.cedula_identidad == cedulaIdentidad).FirstOrDefault();
             }
         }
 
@@ -32,8 +32,8 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 var existe = context.Cliente.Find(cliente.id);
-                existe.razonSocial = cliente.razonSocial;
-                existe.cedulaIdentidad = cliente.cedulaIdentidad;
+                existe.razon_social = cliente.razon_social;
+                existe.cedula_identidad = cliente.cedula_identidad;
                 return context.SaveChanges();
             }
         }
@@ -44,7 +44,7 @@ namespace ClnProLimp
             {
                 var existe = context.Cliente.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }
@@ -80,7 +80,7 @@ namespace ClnProLimp
             {
                 return context.Cliente.Any(c =>
                     c.estado > -1 &&
-                    c.cedulaIdentidad == cedulaIdentidad &&
+                    c.cedula_identidad == cedulaIdentidad &&
                     (!excluirId.HasValue || c.id != excluirId.Value));
             }
         }
@@ -91,7 +91,7 @@ namespace ClnProLimp
             {
                 return context.Cliente.Any(c =>
                     c.estado > -1 &&
-                    c.razonSocial == razonSocial &&
+                    c.razon_social == razonSocial &&
                     (!excluirId.HasValue || c.id != excluirId.Value));
             }
         }

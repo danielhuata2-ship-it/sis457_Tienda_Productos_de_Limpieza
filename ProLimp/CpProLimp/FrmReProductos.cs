@@ -23,23 +23,23 @@ namespace CpProLimp
             var lista = ProductoCln.listarPa(txtParametro.Text.Trim());
             dgvLista.DataSource = lista;
             dgvLista.Columns["id"].Visible = false;
-            dgvLista.Columns["idunidadMedida"].Visible = false;
-            dgvLista.Columns["idproveedor"].Visible = false;
-            dgvLista.Columns["idcategoria"].Visible = false;
-            dgvLista.Columns["idmarca"].Visible = false;
+            dgvLista.Columns["id_unidad_medida"].Visible = false;
+            dgvLista.Columns["id_proveedor"].Visible = false;
+            dgvLista.Columns["id_categoria"].Visible = false;
+            dgvLista.Columns["id_marca"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["nombre"].HeaderText = "Nombre";
             dgvLista.Columns["categoria"].HeaderText = "Categoria";
             dgvLista.Columns["marca"].HeaderText = "Marca";
-            dgvLista.Columns["unidadMedida"].HeaderText = "Unidad de Medida";
+            dgvLista.Columns["unidad_medida"].HeaderText = "Unidad de Medida";
             dgvLista.Columns["stock"].HeaderText = "Stock";
-            dgvLista.Columns["precioVenta"].HeaderText = "Precio Venta";
-            dgvLista.Columns["fechaVencimiento"].HeaderText = "Fecha de Vencimiento";
-            dgvLista.Columns["cantidadMinimaStock"].HeaderText = "Cantidad Mínima Stock";
+            dgvLista.Columns["precio_venta"].HeaderText = "Precio Venta";
+            dgvLista.Columns["fecha_vencimiento"].HeaderText = "Fecha de Vencimiento";
+            dgvLista.Columns["cantidad_minima_stock"].HeaderText = "Cantidad Mínima Stock";
             dgvLista.Columns["proveedor"].HeaderText = "Proveedor";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha Registro";
         }
 
         private void FrmReProductos_Load(object sender, EventArgs e)

@@ -24,12 +24,12 @@ namespace CpProLimp
 
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
-            dgvLista.Columns["nombreEmpresa"].HeaderText = "Nombre de la empresa";
+            dgvLista.Columns["nombre_empresa"].HeaderText = "Nombre de la empresa";
             dgvLista.Columns["telefono"].HeaderText = "Telefono";
             dgvLista.Columns["direccion"].HeaderText = "Dirección";
             dgvLista.Columns["email"].HeaderText = "Email";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha de Registro";
         }
 
         private void FrmReProveedores_Load(object sender, EventArgs e)

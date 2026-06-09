@@ -26,12 +26,12 @@ namespace CpProLimp
             dgvLista.DataSource = lista;
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
-            dgvLista.Columns["razonSocial"].HeaderText = "Razon Social";
-            dgvLista.Columns["cedulaIdentidad"].HeaderText = "Cédula de Identidad";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            dgvLista.Columns["razon_social"].HeaderText = "Razon Social";
+            dgvLista.Columns["cedula_identidad"].HeaderText = "Cédula de Identidad";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha de Registro";
 
-            if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["cedulaIdentidad"];
+            if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["cedula_identidad"];
             btnEditar.Enabled = lista.Count > 0;
             btnBorrar.Enabled = lista.Count > 0;
         }
@@ -57,8 +57,8 @@ namespace CpProLimp
 
             int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
             var cliente = ClienteCln.obtenerUno(id);
-            txtRazonSocial.Text = cliente.razonSocial;
-            txtCedulaIdentidad.Text = cliente.cedulaIdentidad;
+            txtRazonSocial.Text = cliente.razon_social;
+            txtCedulaIdentidad.Text = cliente.cedula_identidad;
 
             txtRazonSocial.Focus();
         }
@@ -104,12 +104,12 @@ namespace CpProLimp
             try
             {
                 var cliente = new Cliente();
-                cliente.razonSocial = txtRazonSocial.Text.Trim();
-                cliente.cedulaIdentidad = txtCedulaIdentidad.Text.Trim();
-                cliente.usuarioRegistro = Util.empleado.usuario;
+                cliente.razon_social = txtRazonSocial.Text.Trim();
+                cliente.cedula_identidad = txtCedulaIdentidad.Text.Trim();
+                cliente.usuario_registro = Util.empleado.usuario;
                 if (esNuevo)
                 {
-                    cliente.fechaRegistro = DateTime.Now;
+                    cliente.fecha_registro = DateTime.Now;
                     cliente.estado = 1;
                     ClienteCln.insertar(cliente);
                 }

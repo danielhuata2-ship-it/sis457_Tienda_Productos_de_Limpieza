@@ -28,18 +28,18 @@ namespace CpProLimp
             var listaEmpleados = EmpleadoCln.listar();
 
             var listaCompleta = from v in listaVentas
-                                join c in listaClientes on v.idcliente equals c.id
-                                join e in listaEmpleados on v.idempleado equals e.id
+                                join c in listaClientes on v.id_cliente equals c.id
+                                join e in listaEmpleados on v.id_empleado equals e.id
                                 where v.estado != -1
                                 select new
                                 {
                                     v.id,
                                     v.fecha,
-                                    Cliente = c.razonSocial,
-                                    Empleado = e.nombres + " " + e.primerApellido,
+                                    Cliente = c.razon_social,
+                                    Empleado = e.nombres + " " + e.primer_apellido,
                                     v.total,
-                                    v.usuarioRegistro,
-                                    v.fechaRegistro
+                                    v.usuario_registro,
+                                    v.fecha_registro
                                 };
 
             if (!string.IsNullOrEmpty(txtParametro.Text))
@@ -56,8 +56,8 @@ namespace CpProLimp
             dgvLista.Columns["Cliente"].HeaderText = "Cliente";
             dgvLista.Columns["Empleado"].HeaderText = "Vendedor";
             dgvLista.Columns["total"].HeaderText = "Total Bs.";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha Registro";
         }
 
         private void FrmReVentas_Load(object sender, EventArgs e)

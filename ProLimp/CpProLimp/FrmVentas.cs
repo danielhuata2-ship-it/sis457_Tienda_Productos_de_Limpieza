@@ -43,24 +43,24 @@ namespace CpProLimp
             dgvLista.DataSource = lista;
 
             dgvLista.Columns["id"].Visible = false;
-            dgvLista.Columns["idunidadMedida"].Visible = false;
-            dgvLista.Columns["idproveedor"].Visible = false;
-            dgvLista.Columns["idcategoria"].Visible = false;
-            dgvLista.Columns["idmarca"].Visible = false;
+            dgvLista.Columns["id_unidad_medida"].Visible = false;
+            dgvLista.Columns["id_proveedor"].Visible = false;
+            dgvLista.Columns["id_categoria"].Visible = false;
+            dgvLista.Columns["id_marca"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["categoria"].Visible = false;
-            dgvLista.Columns["unidadMedida"].Visible = false;
-            dgvLista.Columns["fechaVencimiento"].Visible = false;
-            dgvLista.Columns["precioCompra"].Visible = false;
-            dgvLista.Columns["cantidadMinimaStock"].Visible = false;
+            dgvLista.Columns["unidad_medida"].Visible = false;
+            dgvLista.Columns["fecha_vencimiento"].Visible = false;
+            dgvLista.Columns["precio_compra"].Visible = false;
+            dgvLista.Columns["cantidad_minima_stock"].Visible = false;
             dgvLista.Columns["proveedor"].Visible = false;
-            dgvLista.Columns["usuarioRegistro"].Visible = false;
-            dgvLista.Columns["fechaRegistro"].Visible = false;
+            dgvLista.Columns["usuario_registro"].Visible = false;
+            dgvLista.Columns["fecha_registro"].Visible = false;
             dgvLista.Columns["marca"].Visible = false;
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["nombre"].HeaderText = "Nombre";
             dgvLista.Columns["stock"].HeaderText = "Stock";
-            dgvLista.Columns["precioVenta"].HeaderText = "Precio Unitario";
+            dgvLista.Columns["precio_venta"].HeaderText = "Precio Unitario";
         }
 
         private void calcularTotal()
@@ -107,13 +107,13 @@ namespace CpProLimp
 
             var lista = ClienteCln.listarPa("");
 
-            var cliente = lista.FirstOrDefault(x => x.cedulaIdentidad.Trim() == ci.Trim());
+            var cliente = lista.FirstOrDefault(x => x.cedula_identidad.Trim() == ci.Trim());
 
             if (cliente != null)
             {
-                if (cliente.cedulaIdentidad == "0")
+                if (cliente.cedula_identidad == "0")
                 {
-                    lblCliente.Text = cliente.razonSocial;
+                    lblCliente.Text = cliente.razon_social;
                     lblCliente.ForeColor = Color.Green;
 
                     lblComprasCliente.Text = "-";
@@ -128,7 +128,7 @@ namespace CpProLimp
 
                     return cliente.id;
                 }
-                lblCliente.Text = cliente.razonSocial;
+                lblCliente.Text = cliente.razon_social;
                 lblCliente.ForeColor = Color.Green;
 
                 int compras = VentaCln.ContarComprasCliente(cliente.id);
@@ -166,7 +166,7 @@ namespace CpProLimp
 
         private void FrmVentas_Load(object sender, EventArgs e)
         {
-            lblEmpleado.Text = Util.empleado.nombres + " " + Util.empleado.primerApellido;
+            lblEmpleado.Text = Util.empleado.nombres + " " + Util.empleado.primer_apellido;
             lblUsuario.Text = Util.empleado.usuario;
             dtpFechaVenta.Value = DateTime.Now;
             dtpFechaVenta.Enabled = false;
@@ -214,7 +214,7 @@ namespace CpProLimp
             string nombre =
                 dgvLista.CurrentRow.Cells["nombre"].Value.ToString();
 
-            decimal precio = Convert.ToDecimal(dgvLista.CurrentRow.Cells["precioVenta"].Value);
+            decimal precio = Convert.ToDecimal(dgvLista.CurrentRow.Cells["precio_venta"].Value);
 
             decimal cantidad = nudCantidad.Value;
 
@@ -278,7 +278,7 @@ namespace CpProLimp
             if (dgvVenta.CurrentRow == null)
                 return;
 
-            int idProducto = Convert.ToInt32(dgvVenta.CurrentRow.Cells["idProducto"].Value);
+            int idProducto = Convert.ToInt32(dgvVenta.CurrentRow.Cells["id_producto"].Value);
 
             var item = detalle.FirstOrDefault(x => x.idProducto == idProducto);
 
@@ -308,7 +308,7 @@ namespace CpProLimp
 
                 foreach (DataGridViewRow fila in dgvVenta.Rows)
                 {
-                    if (Convert.ToInt32(fila.Cells["idProducto"].Value)
+                    if (Convert.ToInt32(fila.Cells["id_producto"].Value)
                         == idProducto)
                     {
                         fila.Selected = true;
@@ -341,7 +341,7 @@ namespace CpProLimp
 
                     foreach (DataGridViewRow fila in dgvVenta.Rows)
                     {
-                        if (Convert.ToInt32(fila.Cells["idProducto"].Value) == idProducto)
+                        if (Convert.ToInt32(fila.Cells["id_producto"].Value) == idProducto)
                         {
                             fila.Selected = true;
                             dgvVenta.CurrentCell = fila.Cells["nombre"];
@@ -368,7 +368,7 @@ namespace CpProLimp
             }
 
             int idProducto =
-                Convert.ToInt32(dgvVenta.CurrentRow.Cells["idProducto"].Value);
+                Convert.ToInt32(dgvVenta.CurrentRow.Cells["id_producto"].Value);
 
             var item = detalle.FirstOrDefault(x => x.idProducto == idProducto);
 
@@ -434,8 +434,8 @@ namespace CpProLimp
             {
                 Venta venta = new Venta();
 
-                venta.idcliente = idCliente;
-                venta.idempleado = Util.empleado.id;
+                venta.id_cliente = idCliente;
+                venta.id_empleado = Util.empleado.id;
                 venta.fecha = DateTime.Now;
 
                 decimal subtotal = detalle.Sum(x => x.subtotal);
@@ -445,8 +445,8 @@ namespace CpProLimp
 
                 venta.total = subtotal - descuento;
 
-                venta.usuarioRegistro = Util.empleado.usuario;
-                venta.fechaRegistro = DateTime.Now;
+                venta.usuario_registro = Util.empleado.usuario;
+                venta.fecha_registro = DateTime.Now;
                 venta.estado = 1;
 
                 int idVenta = VentaCln.insertar(venta);
@@ -455,14 +455,14 @@ namespace CpProLimp
                 {
                     DetalleVenta det = new DetalleVenta();
 
-                    det.idventa = idVenta;
-                    det.idproducto = item.idProducto;
+                    det.id_venta = idVenta;
+                    det.id_producto = item.idProducto;
                     det.cantidad = item.cantidad;
-                    det.precioUnitario = item.precioUnitario;
+                    det.precio_unitario = item.precioUnitario;
                     det.subtotal = item.subtotal;
 
-                    det.usuarioRegistro = Util.empleado.usuario;
-                    det.fechaRegistro = DateTime.Now;
+                    det.usuario_registro = Util.empleado.usuario;
+                    det.fecha_registro = DateTime.Now;
                     det.estado = 1;
 
                     DetalleVentaCln.insertar(det);

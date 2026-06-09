@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,24 +11,28 @@
       "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmreventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmreventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmreclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmreclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmreventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmreventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LabProLimp.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|c:\\users\\core i5\\desktop\\sis457 lab\\sis457_tienda_productos_de_limpieza\\prolimp\\cpprolimp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{85B03387-9083-4309-AF4E-D7A5BEC21802}|CpProLimp\\CpProLimp.csproj|solutionrelative:cpprolimp\\frmclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,92 +42,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmAutenticacion.cs",
-              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmAutenticacion.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmAutenticacion.cs",
-              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmAutenticacion.cs",
-              "RelativeToolTip": "CpProLimp\\FrmAutenticacion.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FrmVentas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmVentas.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmVentas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpProLimp\\FrmVentas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:48:47.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmAutenticacion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmAutenticacion.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmAutenticacion.cs",
-              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmAutenticacion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpProLimp\\FrmAutenticacion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:48:44.058Z",
+              "WhenOpened": "2026-06-09T03:41:37.038Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LabProLimp.sql ",
-              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\LabProLimp.sql",
-              "RelativeDocumentMoniker": "LabProLimp.sql",
-              "ToolTip": "LabProLimp.sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-31T22:43:19.916Z",
+              "DocumentIndex": 3,
+              "Title": "FrmReClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReClientes.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmReClientes.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpProLimp\\FrmReClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T03:41:30.842Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmClientes.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmClientes.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmClientes.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmClientes.cs",
+              "RelativeToolTip": "CpProLimp\\FrmClientes.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T03:40:38.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "FrmClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmClientes.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmClientes.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpProLimp\\FrmClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T03:40:36.751Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmProveedores.cs",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmProveedores.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmProveedores.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmProveedores.cs",
+              "RelativeToolTip": "CpProLimp\\FrmProveedores.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAF8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T03:40:01.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmProveedores.cs",
+              "RelativeDocumentMoniker": "CpProLimp\\FrmProveedores.cs",
+              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpProLimp\\FrmProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T03:39:59.61Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FrmFactura.cs",
               "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmFactura.cs",
               "RelativeDocumentMoniker": "CpProLimp\\FrmFactura.cs",
               "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmFactura.cs",
               "RelativeToolTip": "CpProLimp\\FrmFactura.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAcwEEAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:36:29.793Z",
+              "WhenOpened": "2026-06-09T03:39:50.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "FrmFactura.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmFactura.cs",
               "RelativeDocumentMoniker": "CpProLimp\\FrmFactura.cs",
               "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmFactura.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpProLimp\\FrmFactura.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:36:26.909Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmReVentas.cs",
-              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReVentas.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmReVentas.cs",
-              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReVentas.cs",
-              "RelativeToolTip": "CpProLimp\\FrmReVentas.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowDEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:31:08.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmReVentas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReVentas.cs",
-              "RelativeDocumentMoniker": "CpProLimp\\FrmReVentas.cs",
-              "ToolTip": "C:\\Users\\CORE i5\\Desktop\\SIS457 LAB\\sis457_Tienda_Productos_de_Limpieza\\ProLimp\\CpProLimp\\FrmReVentas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CpProLimp\\FrmReVentas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T22:30:48.415Z",
+              "WhenOpened": "2026-06-09T03:39:49.26Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

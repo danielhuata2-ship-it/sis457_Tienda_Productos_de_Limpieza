@@ -25,9 +25,9 @@ namespace ClnProLimp
             {
                 var existe = context.Empleado.Find(empleado.id);
                 existe.nombres = empleado.nombres;
-                existe.primerApellido = empleado.primerApellido;
-                existe.segundoApellido = empleado.segundoApellido;
-                existe.cedulaIdentidad = empleado.cedulaIdentidad;
+                existe.primer_apellido = empleado.primer_apellido;
+                existe.segundo_apellido = empleado.segundo_apellido;
+                existe.cedula_identidad = empleado.cedula_identidad;
                 existe.usuario = empleado.usuario;
                 existe.clave = empleado.clave;
                 existe.telefono = empleado.telefono;
@@ -41,7 +41,7 @@ namespace ClnProLimp
             {
                 var existe = context.Empleado.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }

@@ -24,12 +24,12 @@ namespace CpProLimp
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
             dgvLista.Columns["nombres"].HeaderText = "Nombres";
-            dgvLista.Columns["primerApellido"].HeaderText = "Primer Apellido";
-            dgvLista.Columns["segundoApellido"].HeaderText = "Segundo Apellido";
+            dgvLista.Columns["primer_apellido"].HeaderText = "Primer Apellido";
+            dgvLista.Columns["segundo_apellido"].HeaderText = "Segundo Apellido";
             dgvLista.Columns["usuario"].HeaderText = "Usuario";
             dgvLista.Columns["telefono"].HeaderText = "Teléfono/Celular";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha de Registro";
         }
 
         private void FrmReEmpleados_Load(object sender, EventArgs e)

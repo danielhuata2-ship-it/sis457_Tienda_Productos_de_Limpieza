@@ -6,8 +6,8 @@
         <MappingFragment StoreEntitySet="Categoria">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -16,10 +16,10 @@
       <EntityTypeMapping TypeName="LabProLimpModel.Cliente">
         <MappingFragment StoreEntitySet="Cliente">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
-          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="cedula_identidad" ColumnName="cedula_identidad" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -28,13 +28,13 @@
       <EntityTypeMapping TypeName="LabProLimpModel.DetalleVenta">
         <MappingFragment StoreEntitySet="DetalleVenta">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idventa" ColumnName="idventa" />
-          <ScalarProperty Name="idproducto" ColumnName="idproducto" />
+          <ScalarProperty Name="id_venta" ColumnName="id_venta" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
           <ScalarProperty Name="cantidad" ColumnName="cantidad" />
-          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="precio_unitario" ColumnName="precio_unitario" />
           <ScalarProperty Name="subtotal" ColumnName="subtotal" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -44,14 +44,14 @@
         <MappingFragment StoreEntitySet="Empleado">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombres" ColumnName="nombres" />
-          <ScalarProperty Name="primerApellido" ColumnName="primerApellido" />
-          <ScalarProperty Name="segundoApellido" ColumnName="segundoApellido" />
-          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
+          <ScalarProperty Name="primer_apellido" ColumnName="primer_apellido" />
+          <ScalarProperty Name="segundo_apellido" ColumnName="segundo_apellido" />
+          <ScalarProperty Name="cedula_identidad" ColumnName="cedula_identidad" />
           <ScalarProperty Name="usuario" ColumnName="usuario" />
           <ScalarProperty Name="clave" ColumnName="clave" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -61,8 +61,8 @@
         <MappingFragment StoreEntitySet="Marca">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -71,19 +71,19 @@
       <EntityTypeMapping TypeName="LabProLimpModel.Producto">
         <MappingFragment StoreEntitySet="Producto">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idunidadMedida" ColumnName="idunidadMedida" />
-          <ScalarProperty Name="idproveedor" ColumnName="idproveedor" />
-          <ScalarProperty Name="idcategoria" ColumnName="idcategoria" />
-          <ScalarProperty Name="idmarca" ColumnName="idmarca" />
+          <ScalarProperty Name="id_unidad_medida" ColumnName="id_unidad_medida" />
+          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
+          <ScalarProperty Name="id_marca" ColumnName="id_marca" />
           <ScalarProperty Name="codigo" ColumnName="codigo" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="precio_unitario" ColumnName="precio_unitario" />
           <ScalarProperty Name="stock" ColumnName="stock" />
-          <ScalarProperty Name="fechaVencimiento" ColumnName="fechaVencimiento" />
-          <ScalarProperty Name="precioCompra" ColumnName="precioCompra" />
-          <ScalarProperty Name="cantidadMinimaStock" ColumnName="cantidadMinimaStock" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="fecha_vencimiento" ColumnName="fecha_vencimiento" />
+          <ScalarProperty Name="precio_compra" ColumnName="precio_compra" />
+          <ScalarProperty Name="cantidad_minima_stock" ColumnName="cantidad_minima_stock" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -92,12 +92,12 @@
       <EntityTypeMapping TypeName="LabProLimpModel.Proveedor">
         <MappingFragment StoreEntitySet="Proveedor">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombreEmpresa" ColumnName="nombreEmpresa" />
+          <ScalarProperty Name="nombre_empresa" ColumnName="nombre_empresa" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="direccion" ColumnName="direccion" />
           <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -107,8 +107,8 @@
         <MappingFragment StoreEntitySet="UnidadMedida">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -117,12 +117,12 @@
       <EntityTypeMapping TypeName="LabProLimpModel.Venta">
         <MappingFragment StoreEntitySet="Venta">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idcliente" ColumnName="idcliente" />
-          <ScalarProperty Name="idempleado" ColumnName="idempleado" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />
           <ScalarProperty Name="total" ColumnName="total" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -132,8 +132,8 @@
         <ComplexTypeMapping TypeName="LabProLimpModel.paCategoriaListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -142,10 +142,10 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabProLimpModel.paClienteListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
-          <ScalarProperty Name="cedulaIdentidad" ColumnName="cedulaIdentidad" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+          <ScalarProperty Name="cedula_identidad" ColumnName="cedula_identidad" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -154,13 +154,13 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabProLimpModel.paDetalleVentaListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idventa" ColumnName="idventa" />
-          <ScalarProperty Name="idproducto" ColumnName="idproducto" />
+          <ScalarProperty Name="id_venta" ColumnName="id_venta" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
           <ScalarProperty Name="cantidad" ColumnName="cantidad" />
-          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="precio_unitario" ColumnName="precio_unitario" />
           <ScalarProperty Name="subtotal" ColumnName="subtotal" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -170,12 +170,12 @@
         <ComplexTypeMapping TypeName="LabProLimpModel.paEmpleadoListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombres" ColumnName="nombres" />
-          <ScalarProperty Name="primerApellido" ColumnName="primerApellido" />
-          <ScalarProperty Name="segundoApellido" ColumnName="segundoApellido" />
+          <ScalarProperty Name="primer_apellido" ColumnName="primer_apellido" />
+          <ScalarProperty Name="segundo_apellido" ColumnName="segundo_apellido" />
           <ScalarProperty Name="usuario" ColumnName="usuario" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -185,8 +185,8 @@
         <ComplexTypeMapping TypeName="LabProLimpModel.paMarcaListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -195,23 +195,23 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabProLimpModel.paProductoListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idunidadMedida" ColumnName="idunidadMedida" />
-          <ScalarProperty Name="idproveedor" ColumnName="idproveedor" />
-          <ScalarProperty Name="idmarca" ColumnName="idmarca" />
-          <ScalarProperty Name="idcategoria" ColumnName="idcategoria" />
+          <ScalarProperty Name="id_unidad_medida" ColumnName="id_unidad_medida" />
+          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+          <ScalarProperty Name="id_marca" ColumnName="id_marca" />
+          <ScalarProperty Name="id_categoria" ColumnName="id_categoria" />
           <ScalarProperty Name="codigo" ColumnName="codigo" />
           <ScalarProperty Name="nombre" ColumnName="nombre" />
           <ScalarProperty Name="categoria" ColumnName="categoria" />
-          <ScalarProperty Name="unidadMedida" ColumnName="unidadMedida" />
+          <ScalarProperty Name="unidad_medida" ColumnName="unidad_medida" />
           <ScalarProperty Name="marca" ColumnName="marca" />
           <ScalarProperty Name="stock" ColumnName="stock" />
-          <ScalarProperty Name="precioVenta" ColumnName="precioVenta" />
-          <ScalarProperty Name="fechaVencimiento" ColumnName="fechaVencimiento" />
-          <ScalarProperty Name="precioCompra" ColumnName="precioCompra" />
-          <ScalarProperty Name="cantidadMinimaStock" ColumnName="cantidadMinimaStock" />
+          <ScalarProperty Name="precio_venta" ColumnName="precio_venta" />
+          <ScalarProperty Name="fecha_vencimiento" ColumnName="fecha_vencimiento" />
+          <ScalarProperty Name="precio_compra" ColumnName="precio_compra" />
+          <ScalarProperty Name="cantidad_minima_stock" ColumnName="cantidad_minima_stock" />
           <ScalarProperty Name="proveedor" ColumnName="proveedor" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -220,12 +220,12 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabProLimpModel.paProveedorListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="nombreEmpresa" ColumnName="nombreEmpresa" />
+          <ScalarProperty Name="nombre_empresa" ColumnName="nombre_empresa" />
           <ScalarProperty Name="telefono" ColumnName="telefono" />
           <ScalarProperty Name="direccion" ColumnName="direccion" />
           <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -235,8 +235,8 @@
         <ComplexTypeMapping TypeName="LabProLimpModel.paUnidadMedidaListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>
@@ -245,12 +245,12 @@
       <ResultMapping>
         <ComplexTypeMapping TypeName="LabProLimpModel.paVentaListar_Result">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idcliente" ColumnName="idcliente" />
-          <ScalarProperty Name="idempleado" ColumnName="idempleado" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_empleado" ColumnName="id_empleado" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />
           <ScalarProperty Name="total" ColumnName="total" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="usuario_registro" ColumnName="usuario_registro" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
           <ScalarProperty Name="estado" ColumnName="estado" />
         </ComplexTypeMapping>
       </ResultMapping>

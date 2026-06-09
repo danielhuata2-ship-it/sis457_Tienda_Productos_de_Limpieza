@@ -52,7 +52,7 @@ namespace CpProLimp
             lblCliente.Text = $"Cliente: {nombreCliente}";
             lblCI.Text = $"CI: {ciCliente}";
             dgvDetalle.DataSource = detalleVenta;
-            dgvDetalle.Columns["idProducto"].Visible = false;
+            dgvDetalle.Columns["idproducto"].Visible = false;
             dgvDetalle.Columns["nombre"].HeaderText = "Producto";
             dgvDetalle.Columns["cantidad"].HeaderText = "Cantidad";
             dgvDetalle.Columns["precioUnitario"].HeaderText = "Precio Unit.";

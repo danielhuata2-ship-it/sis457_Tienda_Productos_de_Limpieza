@@ -25,7 +25,7 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 var existe = context.Proveedor.Find(proveedor.id);
-                existe.nombreEmpresa = proveedor.nombreEmpresa;
+                existe.nombre_empresa = proveedor.nombre_empresa;
                 existe.telefono = proveedor.telefono;
                 existe.direccion = proveedor.direccion;
                 existe.email = proveedor.email;
@@ -39,7 +39,7 @@ namespace ClnProLimp
             {
                 var existe = context.Proveedor.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }
@@ -57,7 +57,7 @@ namespace ClnProLimp
         {
             using (var context = new LabProLimpEntities())
             {
-                return context.Proveedor.Where(x => x.estado == 1).OrderBy(x => x.nombreEmpresa).ToList();
+                return context.Proveedor.Where(x => x.estado == 1).OrderBy(x => x.nombre_empresa).ToList();
             }
         }
 

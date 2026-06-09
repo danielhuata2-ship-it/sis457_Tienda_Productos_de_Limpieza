@@ -24,8 +24,8 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 var existe = context.Venta.Find(venta.id);
-                existe.idcliente = venta.idcliente;
-                existe.idempleado = venta.idempleado;
+                existe.id_cliente = venta.id_cliente;
+                existe.id_empleado = venta.id_empleado;
                 existe.fecha = venta.fecha;
                 existe.total = venta.total;
                 return context.SaveChanges();
@@ -38,7 +38,7 @@ namespace ClnProLimp
             {
                 var existe = context.Venta.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }
@@ -64,7 +64,7 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 return context.Venta
-                    .Count(v => v.idcliente == idCliente && v.estado > -1);
+                    .Count(v => v.id_cliente == idCliente && v.estado > -1);
             }
         }
 
@@ -73,7 +73,7 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 return context.Venta.Count(v =>
-                    v.idcliente == idCliente &&
+                    v.id_cliente == idCliente &&
                     v.estado != -1);
             }
         }

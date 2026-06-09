@@ -28,14 +28,14 @@ namespace CpProLimp
 
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
-            dgvLista.Columns["nombreEmpresa"].HeaderText = "Nombre de la empresa";
+            dgvLista.Columns["nombre_empresa"].HeaderText = "Nombre de la empresa";
             dgvLista.Columns["telefono"].HeaderText = "Telefono";
             dgvLista.Columns["direccion"].HeaderText = "Dirección";
             dgvLista.Columns["email"].HeaderText = "Email";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha de Registro";
 
-            if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["nombreEmpresa"];
+            if (lista.Count > 0) dgvLista.CurrentCell = dgvLista.Rows[0].Cells["nombre_empresa"];
             btnEditar.Enabled = lista.Count > 0;
             btnBorrar.Enabled = lista.Count > 0;
         }
@@ -92,15 +92,15 @@ namespace CpProLimp
             if (validar())
             {
                 var proveedor = new Proveedor();
-                proveedor.nombreEmpresa = txtNombreEmpresa.Text.Trim();
+                proveedor.nombre_empresa = txtNombreEmpresa.Text.Trim();
                 proveedor.telefono = txtTelefono.Text.Trim().Length > 0 ? long.Parse(txtTelefono.Text.Trim()) : 0;
                 proveedor.direccion = txtDireccion.Text.Trim();
                 proveedor.email = txtEmail.Text.Trim();
-                proveedor.usuarioRegistro = "admin";
+                proveedor.usuario_registro = Util.empleado.usuario;
 
                 if (esNuevo)
                 {
-                    proveedor.fechaRegistro = DateTime.Now;
+                    proveedor.fecha_registro = DateTime.Now;
                     proveedor.estado = 1;
 
                     ProveedorCln.insertar(proveedor);
@@ -141,7 +141,7 @@ namespace CpProLimp
         private void btnBorrar_Click(object sender, EventArgs e)
         {
             int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
-            string nombreEmpresa = dgvLista.CurrentRow.Cells["nombreEmpresa"].Value.ToString();
+            string nombreEmpresa = dgvLista.CurrentRow.Cells["nombre_empresa"].Value.ToString();
             DialogResult dialog = MessageBox.Show($"¿Está seguro de eliminar el proveedor {nombreEmpresa}?",
                 "::: Mensaje - ProLimp :::", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
@@ -162,7 +162,7 @@ namespace CpProLimp
             int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
             var proveedor = ProveedorCln.obtenerUno(id);
 
-            txtNombreEmpresa.Text = proveedor.nombreEmpresa;
+            txtNombreEmpresa.Text = proveedor.nombre_empresa;
             txtTelefono.Text = proveedor.telefono.ToString();
             txtDireccion.Text = proveedor.direccion;
             txtEmail.Text = proveedor.email;

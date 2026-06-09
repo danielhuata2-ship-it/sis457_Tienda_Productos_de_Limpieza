@@ -24,10 +24,10 @@ namespace ClnProLimp
             using (var context = new LabProLimpEntities())
             {
                 var existe = context.DetalleVenta.Find(detalleVenta.id);
-                existe.idventa = detalleVenta.idventa;
-                existe.idproducto = detalleVenta.idproducto;
+                existe.id_venta = detalleVenta.id_venta;
+                existe.id_producto = detalleVenta.id_producto;
                 existe.cantidad = detalleVenta.cantidad;
-                existe.precioUnitario = detalleVenta.precioUnitario;
+                existe.precio_unitario = detalleVenta.precio_unitario;
                 existe.subtotal = detalleVenta.subtotal;
                 return context.SaveChanges();
             }
@@ -39,7 +39,7 @@ namespace ClnProLimp
             {
                 var existe = context.DetalleVenta.Find(id);
                 existe.estado = -1;
-                existe.usuarioRegistro = usuarioRegistro;
+                existe.usuario_registro = usuarioRegistro;
                 return context.SaveChanges();
             }
         }

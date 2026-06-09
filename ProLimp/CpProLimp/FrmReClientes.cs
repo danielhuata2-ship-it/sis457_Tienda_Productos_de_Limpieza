@@ -24,10 +24,10 @@ namespace CpProLimp
             dgvLista.DataSource = lista;
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
-            dgvLista.Columns["razonSocial"].HeaderText = "Razón Social";
-            dgvLista.Columns["cedulaIdentidad"].HeaderText = "Cédula de Identidad";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
-            dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha de Registro";
+            dgvLista.Columns["razon_Social"].HeaderText = "Razón Social";
+            dgvLista.Columns["cedula_identidad"].HeaderText = "Cédula de Identidad";
+            dgvLista.Columns["usuario_registro"].HeaderText = "Usuario Registro";
+            dgvLista.Columns["fecha_registro"].HeaderText = "Fecha de Registro";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

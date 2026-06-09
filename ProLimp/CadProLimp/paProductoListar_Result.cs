@@ -14,23 +14,23 @@ namespace CadProLimp
     public partial class paProductoListar_Result
     {
         public int id { get; set; }
-        public int idunidadMedida { get; set; }
-        public int idproveedor { get; set; }
-        public Nullable<int> idmarca { get; set; }
-        public Nullable<int> idcategoria { get; set; }
+        public int id_unidad_medida { get; set; }
+        public int id_proveedor { get; set; }
+        public Nullable<int> id_marca { get; set; }
+        public Nullable<int> id_categoria { get; set; }
         public string codigo { get; set; }
         public string nombre { get; set; }
         public string categoria { get; set; }
-        public string unidadMedida { get; set; }
+        public string unidad_medida { get; set; }
         public string marca { get; set; }
         public int stock { get; set; }
-        public decimal precioVenta { get; set; }
-        public Nullable<System.DateTime> fechaVencimiento { get; set; }
-        public decimal precioCompra { get; set; }
-        public int cantidadMinimaStock { get; set; }
+        public decimal precio_venta { get; set; }
+        public Nullable<System.DateTime> fecha_vencimiento { get; set; }
+        public decimal precio_compra { get; set; }
+        public int cantidad_minima_stock { get; set; }
         public string proveedor { get; set; }
-        public string usuarioRegistro { get; set; }
-        public System.DateTime fechaRegistro { get; set; }
+        public string usuario_registro { get; set; }
+        public System.DateTime fecha_registro { get; set; }
         public short estado { get; set; }
     }
 }
