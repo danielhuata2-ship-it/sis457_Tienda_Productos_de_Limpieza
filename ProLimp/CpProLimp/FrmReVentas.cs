@@ -128,7 +128,29 @@ namespace CpProLimp
 
         private void btnAnular_Click(object sender, EventArgs e)
         {
+            if (dgvLista.CurrentRow == null)
+                return;
 
+            int idVenta = (int)dgvLista.CurrentRow.Cells["id"].Value;
+
+            DialogResult dialog = MessageBox.Show(
+                "¿Desea anular esta venta?",
+                "::: ProLimp :::",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.Yes)
+            {
+                VentaCln.anular(idVenta, Util.empleado.usuario);
+
+                listar();
+
+                MessageBox.Show(
+                    "Venta anulada correctamente.",
+                    "::: ProLimp :::",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
     }
 }

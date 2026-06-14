@@ -42,7 +42,7 @@ namespace CpProLimp
 
         private void FrmProveedores_Load(object sender, EventArgs e)
         {
-            Size = new Size(1082, 494);
+            Size = new Size(1193, 500);
             listar();
         }
 
@@ -50,7 +50,7 @@ namespace CpProLimp
         {
             esNuevo = true;
             pnlAcciones.Visible = true;
-            Size = new Size(1190, 656);
+            Size = new Size(1193, 660);
         }
         private bool validar()
         {
@@ -133,7 +133,7 @@ namespace CpProLimp
 
         private void btnCanelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(1190, 500);
+            Size = new Size(1193, 500);
             pnlAcciones.Enabled = true;
             limpiar();
         }
@@ -157,7 +157,7 @@ namespace CpProLimp
         {
             esNuevo = false;
             pnlAcciones.Enabled = false;
-            Size = new Size(1190, 656);
+            Size = new Size(1193, 660);
 
             int id = (int)dgvLista.CurrentRow.Cells["id"].Value;
             var proveedor = ProveedorCln.obtenerUno(id);

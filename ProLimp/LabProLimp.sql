@@ -428,3 +428,5 @@ INSERT INTO Cliente(razon_social,cedula_identidad)
 VALUES ('Consumidor Final','0')
 
 SELECT * FROM Cliente
+
+SELECT * FROM Venta
