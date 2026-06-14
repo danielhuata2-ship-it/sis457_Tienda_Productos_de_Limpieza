@@ -1,4 +1,5 @@
 ﻿using ClnProLimp;
+using cpProLimp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -123,6 +124,11 @@ namespace CpProLimp
         private void btnBuscarFecha_Click(object sender, EventArgs e)
         {
             listarPorFecha();
+        }
+
+        private void btnAnular_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

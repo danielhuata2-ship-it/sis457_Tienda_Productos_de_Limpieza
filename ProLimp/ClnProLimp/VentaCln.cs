@@ -85,6 +85,6 @@ namespace ClnProLimp
                 return context.Venta
                     .FirstOrDefault(x => x.id == id && x.estado != -1);
             }
-        } 
+        }
     }
 }

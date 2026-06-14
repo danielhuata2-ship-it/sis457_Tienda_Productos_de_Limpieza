@@ -47,7 +47,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTotal.Location = new System.Drawing.Point(440, 657);
+            this.lblTotal.Location = new System.Drawing.Point(401, 629);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(83, 24);
@@ -59,7 +59,7 @@
             this.lblCI.AutoSize = true;
             this.lblCI.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCI.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCI.Location = new System.Drawing.Point(33, 240);
+            this.lblCI.Location = new System.Drawing.Point(33, 226);
             this.lblCI.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCI.Name = "lblCI";
             this.lblCI.Size = new System.Drawing.Size(35, 24);
@@ -71,7 +71,7 @@
             this.lblCliente.AutoSize = true;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblCliente.Location = new System.Drawing.Point(33, 207);
+            this.lblCliente.Location = new System.Drawing.Point(33, 193);
             this.lblCliente.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(81, 24);
@@ -83,7 +83,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblFecha.Location = new System.Drawing.Point(33, 174);
+            this.lblFecha.Location = new System.Drawing.Point(33, 160);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(75, 24);
@@ -95,7 +95,7 @@
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNumero.Location = new System.Drawing.Point(441, 106);
+            this.lblNumero.Location = new System.Drawing.Point(401, 100);
             this.lblNumero.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(82, 24);
@@ -106,10 +106,10 @@
             // 
             this.lblEmpresa.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblEmpresa.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.Location = new System.Drawing.Point(394, 139);
+            this.lblEmpresa.Location = new System.Drawing.Point(-3, 124);
             this.lblEmpresa.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(172, 36);
+            this.lblEmpresa.Size = new System.Drawing.Size(889, 36);
             this.lblEmpresa.TabIndex = 36;
             this.lblEmpresa.Text = "VENTA";
             this.lblEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,7 +131,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpProLimp.Properties.Resources.cerrar;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(426, 688);
+            this.btnCerrar.Location = new System.Drawing.Point(387, 660);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -160,7 +160,7 @@
             this.dgvDetalle.AllowUserToDeleteRows = false;
             this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalle.Location = new System.Drawing.Point(13, 283);
+            this.dgvDetalle.Location = new System.Drawing.Point(13, 254);
             this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalle.MultiSelect = false;
             this.dgvDetalle.Name = "dgvDetalle";
@@ -176,7 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(881, 754);
+            this.ClientSize = new System.Drawing.Size(881, 722);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblTotal);
