@@ -77,12 +77,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 99);
+            this.label2.Location = new System.Drawing.Point(15, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(618, 25);
+            this.label2.Size = new System.Drawing.Size(466, 20);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Buscar el cliente por Cedula de Identidad, Apellidos o Teléfono";
+            this.label2.Text = "Buscar el cliente por Razón Social o Cédula de Identidad";
             // 
             // btnBuscar
             // 
@@ -128,7 +128,7 @@
             // 
             // FrmReClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(847, 520);

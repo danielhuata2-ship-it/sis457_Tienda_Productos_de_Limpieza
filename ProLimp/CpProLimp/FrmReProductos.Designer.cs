@@ -43,7 +43,7 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(586, 92);
+            this.txtParametro.Location = new System.Drawing.Point(910, 101);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
@@ -65,11 +65,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 99);
+            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(31, 104);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(500, 19);
+            this.label2.Size = new System.Drawing.Size(607, 22);
             this.label2.TabIndex = 19;
             this.label2.Text = "Buscar el producto por Código, Descripción o Unidad de Medida";
             // 
@@ -106,7 +106,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(1065, 86);
+            this.btnBuscar.Location = new System.Drawing.Point(1342, 93);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 47);
             this.btnBuscar.TabIndex = 18;

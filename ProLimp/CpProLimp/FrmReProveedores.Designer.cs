@@ -57,7 +57,7 @@
             this.btnBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Image = global::CpProLimp.Properties.Resources.buscar;
             this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscar.Location = new System.Drawing.Point(1100, 88);
+            this.btnBuscar.Location = new System.Drawing.Point(1324, 88);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(97, 47);
             this.btnBuscar.TabIndex = 23;
@@ -68,7 +68,7 @@
             // 
             // txtParametro
             // 
-            this.txtParametro.Location = new System.Drawing.Point(505, 98);
+            this.txtParametro.Location = new System.Drawing.Point(729, 98);
             this.txtParametro.Margin = new System.Windows.Forms.Padding(4);
             this.txtParametro.Multiline = true;
             this.txtParametro.Name = "txtParametro";
@@ -93,7 +93,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(-3, -1);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1432, 86);
+            this.lblTitulo.Size = new System.Drawing.Size(1450, 86);
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Reportes de Proveedores - ProLimp";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,11 +129,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 101);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 20);
+            this.label1.Size = new System.Drawing.Size(566, 24);
             this.label1.TabIndex = 26;
             this.label1.Text = "Buscar el proveedor por el Nombre de Empresa o Teléfono";
             // 

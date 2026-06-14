@@ -44,15 +44,15 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTotal.Location = new System.Drawing.Point(401, 629);
+            this.lblTotal.Location = new System.Drawing.Point(3, 629);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(83, 24);
+            this.lblTotal.Size = new System.Drawing.Size(883, 24);
             this.lblTotal.TabIndex = 42;
             this.lblTotal.Text = "TOTAL:";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCI
             // 
@@ -92,20 +92,20 @@
             // 
             // lblNumero
             // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNumero.Location = new System.Drawing.Point(401, 100);
+            this.lblNumero.Location = new System.Drawing.Point(2, 99);
             this.lblNumero.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(82, 24);
+            this.lblNumero.Size = new System.Drawing.Size(884, 24);
             this.lblNumero.TabIndex = 37;
             this.lblNumero.Text = "N° 0000";
+            this.lblNumero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblEmpresa
             // 
             this.lblEmpresa.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblEmpresa.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpresa.Location = new System.Drawing.Point(-3, 124);
             this.lblEmpresa.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEmpresa.Name = "lblEmpresa";
@@ -131,11 +131,11 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpProLimp.Properties.Resources.cerrar;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(387, 660);
+            this.btnCerrar.Location = new System.Drawing.Point(400, 660);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(7);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCerrar.Size = new System.Drawing.Size(107, 56);
+            this.btnCerrar.Size = new System.Drawing.Size(107, 41);
             this.btnCerrar.TabIndex = 43;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -160,7 +160,7 @@
             this.dgvDetalle.AllowUserToDeleteRows = false;
             this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalle.Location = new System.Drawing.Point(13, 254);
+            this.dgvDetalle.Location = new System.Drawing.Point(23, 254);
             this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDetalle.MultiSelect = false;
             this.dgvDetalle.Name = "dgvDetalle";
@@ -168,7 +168,7 @@
             this.dgvDetalle.RowHeadersWidth = 51;
             this.dgvDetalle.RowTemplate.Height = 24;
             this.dgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDetalle.Size = new System.Drawing.Size(856, 356);
+            this.dgvDetalle.Size = new System.Drawing.Size(825, 356);
             this.dgvDetalle.TabIndex = 44;
             // 
             // FrmDetalleVenta
@@ -176,7 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(881, 722);
+            this.ClientSize = new System.Drawing.Size(881, 704);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblTotal);
