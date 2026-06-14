@@ -86,3 +86,4 @@ C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\P
 C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmFactura.resources
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmFactura.resources
 C:\Users\CORE i5\Desktop\SIS457 LAB\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmDetalleVenta.resources
+C:\Users\erika\OneDrive\Desktop\sis457 Lab\sis457_Tienda_Productos_de_Limpieza\ProLimp\CpProLimp\obj\Debug\CpProLimp.FrmDetalleVenta.resources

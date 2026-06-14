@@ -77,5 +77,14 @@ namespace ClnProLimp
                     v.estado != -1);
             }
         }
+
+        public static Venta obtenerPorId(int id)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                return context.Venta
+                    .FirstOrDefault(x => x.id == id && x.estado != -1);
+            }
+        } 
     }
 }

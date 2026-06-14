@@ -79,5 +79,14 @@ namespace ClnProLimp
                 return context.paEmpleadoListar(parametro).ToList();
             }
         }
+
+        public static Empleado obtenerPorId(int id)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                return context.Empleado
+                    .FirstOrDefault(x => x.id == id && x.estado != -1);
+            }
+        }
     }
 }

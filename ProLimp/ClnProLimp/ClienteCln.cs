@@ -84,5 +84,14 @@ namespace ClnProLimp
                     (!excluirId.HasValue || c.id != excluirId.Value));
             }
         }
+
+        public static Cliente obtenerPorId(int id)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                return context.Cliente
+                    .FirstOrDefault(x => x.id == id && x.estado != -1);
+            }
+        }
     }
 }

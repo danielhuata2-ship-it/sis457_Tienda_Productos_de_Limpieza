@@ -68,5 +68,27 @@ namespace ClnProLimp
                 return context.paDetalleVentaListar(parametro).ToList();
             }
         }
+
+        public static dynamic listarPorVenta(int idVenta)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                var lista =
+                    from dv in context.DetalleVenta
+                    join p in context.Producto
+                        on dv.id_producto equals p.id
+                    where dv.id_venta == idVenta
+                    select new
+                    {
+                        dv.id_producto,
+                        p.nombre,
+                        dv.cantidad,
+                        dv.precio_unitario,
+                        dv.subtotal
+                    };
+
+                return lista.ToList();
+            }
+        }
     }
 }

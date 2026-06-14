@@ -36,11 +36,11 @@ namespace CpProLimp
 
             lblNumero.Text = $"N° {venta.id.ToString("00000")}";
 
-            lblFecha.Text = $"Fecha: {venta.fecha:dd/MM/yyyy HH:mm}";
+            lblFecha.Text = $"Fecha: {venta.fecha:dd/MM/yyyy}";
 
-            lblCliente.Text = $"Cliente: {cliente.razon_social}";
+            lblCliente.Text = $"Cliente: {cliente?.razon_social ?? "N/D"}";
 
-            lblCI.Text = $"CI: {cliente.cedula_identidad}";
+            lblCI.Text = $"CI: {cliente?.cedula_identidad ?? "N/D"}";
 
             dgvDetalle.DataSource = detalle;
 
@@ -54,12 +54,9 @@ namespace CpProLimp
 
             dgvDetalle.Columns["subtotal"].HeaderText = "Subtotal";
 
-            dgvDetalle.AutoSizeColumnsMode =
-                DataGridViewAutoSizeColumnsMode.Fill;
-
             dgvDetalle.ReadOnly = true;
-
             lblTotal.Text = $"TOTAL: Bs. {venta.total:N2}";
+
         }
 
         public FrmDetalleVenta(int id_venta)
