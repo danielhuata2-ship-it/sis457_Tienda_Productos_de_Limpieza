@@ -86,5 +86,30 @@ namespace ClnProLimp
                     .FirstOrDefault(x => x.id == id && x.estado != -1);
             }
         }
+        public static int anular(int idVenta, string usuarioRegistro)
+        {
+            using (var context = new LabProLimpEntities())
+            {
+                var venta = context.Venta.Find(idVenta);
+                if (venta == null)
+                    return 0;
+
+                var detalles = context.DetalleVenta.Where(x => x.id_venta == idVenta).ToList();
+
+                foreach (var detalle in detalles)
+                {
+                    var producto = context.Producto.Find(detalle.id_producto);
+
+                    if (producto != null)
+                    {
+                        producto.stock += (int)detalle.cantidad;
+                    }
+                }
+                venta.estado = -1;
+                venta.usuario_registro = usuarioRegistro;
+
+                return context.SaveChanges();
+            }
+        }
     }
 }
