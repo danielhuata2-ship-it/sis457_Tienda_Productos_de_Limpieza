@@ -62,7 +62,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(-2, -3);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(568, 63);
+            this.lblTitulo.Size = new System.Drawing.Size(770, 63);
             this.lblTitulo.TabIndex = 22;
             this.lblTitulo.Text = "FACTURA DE VENTA";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,7 +73,7 @@
             this.lblEmpresa.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpresa.Location = new System.Drawing.Point(-2, 60);
             this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(568, 35);
+            this.lblEmpresa.Size = new System.Drawing.Size(770, 35);
             this.lblEmpresa.TabIndex = 24;
             this.lblEmpresa.Text = "PRO-LIMP TIENDA DE PRODUCTOS DE LIMPIEZA";
             this.lblEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,7 +83,7 @@
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNumero.Location = new System.Drawing.Point(235, 95);
+            this.lblNumero.Location = new System.Drawing.Point(337, 95);
             this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(82, 24);
@@ -131,7 +131,7 @@
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.Image = global::CpProLimp.Properties.Resources.cerrar;
             this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(220, 600);
+            this.btnCerrar.Location = new System.Drawing.Point(335, 600);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -147,7 +147,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTotal.Location = new System.Drawing.Point(194, 563);
+            this.lblTotal.Location = new System.Drawing.Point(309, 563);
             this.lblTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(83, 24);
@@ -158,6 +158,7 @@
             // 
             this.dgvDetalle.AllowUserToAddRows = false;
             this.dgvDetalle.AllowUserToDeleteRows = false;
+            this.dgvDetalle.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.Location = new System.Drawing.Point(4, 213);
             this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4);
@@ -166,7 +167,7 @@
             this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.RowHeadersWidth = 51;
             this.dgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDetalle.Size = new System.Drawing.Size(542, 293);
+            this.dgvDetalle.Size = new System.Drawing.Size(747, 293);
             this.dgvDetalle.TabIndex = 29;
             // 
             // lblSubtotal
@@ -174,7 +175,7 @@
             this.lblSubtotal.AutoSize = true;
             this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtotal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSubtotal.Location = new System.Drawing.Point(185, 510);
+            this.lblSubtotal.Location = new System.Drawing.Point(300, 510);
             this.lblSubtotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSubtotal.Name = "lblSubtotal";
             this.lblSubtotal.Size = new System.Drawing.Size(91, 24);
@@ -186,7 +187,7 @@
             this.lblDescuento.AutoSize = true;
             this.lblDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescuento.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDescuento.Location = new System.Drawing.Point(176, 534);
+            this.lblDescuento.Location = new System.Drawing.Point(291, 534);
             this.lblDescuento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescuento.Name = "lblDescuento";
             this.lblDescuento.Size = new System.Drawing.Size(116, 24);
@@ -198,7 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(559, 648);
+            this.ClientSize = new System.Drawing.Size(764, 648);
             this.Controls.Add(this.lblDescuento);
             this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.btnCerrar);

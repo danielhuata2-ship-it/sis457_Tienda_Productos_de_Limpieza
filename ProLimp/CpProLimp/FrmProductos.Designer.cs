@@ -350,6 +350,12 @@
             // 
             // nudPrecioCompra
             // 
+            this.nudPrecioCompra.DecimalPlaces = 2;
+            this.nudPrecioCompra.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
             this.nudPrecioCompra.Location = new System.Drawing.Point(904, 158);
             this.nudPrecioCompra.Maximum = new decimal(new int[] {
             1000,
@@ -391,6 +397,12 @@
             // 
             // nudPrecioUnitario
             // 
+            this.nudPrecioUnitario.DecimalPlaces = 2;
+            this.nudPrecioUnitario.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
             this.nudPrecioUnitario.Location = new System.Drawing.Point(904, 28);
             this.nudPrecioUnitario.Maximum = new decimal(new int[] {
             1000,
@@ -400,6 +412,7 @@
             this.nudPrecioUnitario.Name = "nudPrecioUnitario";
             this.nudPrecioUnitario.Size = new System.Drawing.Size(272, 29);
             this.nudPrecioUnitario.TabIndex = 11;
+            this.nudPrecioUnitario.ThousandsSeparator = true;
             // 
             // lblPrecioCompra
             // 

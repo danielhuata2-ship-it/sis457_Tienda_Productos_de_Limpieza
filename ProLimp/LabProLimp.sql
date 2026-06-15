@@ -382,6 +382,9 @@ EXEC paDetalleVentaListar '';
 INSERT INTO Marca(nombre)
 VALUES ('Ola'), ('Omo'), ('Surf'), ('Skip'), ('Liz'), ('Dove'), ('Rexona'), ('Axe'), ('Sedal'), ('Pedsodent'), ('Colgate'), ('Adayo'), ('Muvel')
 
+INSERT INTO Marca(nombre)
+VALUES ('Perlita')
+
 SELECT * FROM Marca;
 
 INSERT INTO Categoria(nombre)
@@ -430,3 +433,14 @@ VALUES ('Consumidor Final','0')
 SELECT * FROM Cliente
 
 SELECT * FROM Venta
+
+UPDATE Venta SET fecha = '2026-05-01' WHERE id = 1;
+UPDATE Venta SET fecha = '2026-05-05' WHERE id = 2;
+UPDATE Venta SET fecha = '2026-05-10' WHERE id = 3;
+UPDATE Venta SET fecha = '2026-05-15' WHERE id = 4;
+UPDATE Venta SET fecha = '2026-05-20' WHERE id = 5;
+UPDATE Venta SET fecha = '2026-06-01' WHERE id = 6;
+UPDATE Venta SET fecha = '2026-06-05' WHERE id = 7;
+UPDATE Venta SET fecha = '2026-06-10' WHERE id = 8;
+UPDATE Venta SET fecha = '2026-06-15' WHERE id = 9;
+UPDATE Venta SET fecha = '2026-06-20' WHERE id = 10;

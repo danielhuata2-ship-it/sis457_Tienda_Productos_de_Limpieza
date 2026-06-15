@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pro-Limp1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.Win.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
     <Reference Include="C1.Win.C1Ribbon.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
@@ -305,6 +308,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\quitar-del-carrito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pro-Limp1-Photoroom.ico" />
+    <Content Include="Pro-Limp1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

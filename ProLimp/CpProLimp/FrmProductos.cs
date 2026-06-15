@@ -97,7 +97,7 @@ namespace CpProLimp
             cargarProveedor();
             cargarCategoria();
             cargarMarca();
-            dtpFechaVencimiento.MinDate = DateTime.Today;
+            dtpFechaVencimiento.MinDate = DateTimePicker.MinimumDateTime;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -242,6 +242,17 @@ namespace CpProLimp
                     erpCodigo.SetError(txtCodigo, "El código ya está registrado.");
                     esValido = false;
                 }
+            }
+
+            if (!chkSinVencimiento.Checked && dtpFechaVencimiento.Value.Date < DateTime.Today)
+            {
+                MessageBox.Show(
+                    "La fecha de vencimiento no puede ser anterior a hoy.",
+                    "Validación",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                esValido = false;
             }
 
             return esValido;
